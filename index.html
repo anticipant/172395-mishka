@@ -5,8 +5,125 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+      <header class="page-header">
+          <h1 class="visually-hidden">Mishka магазин мягких эмоций</h1>
+          <div class="page-header__logo">
+              <img src="http://placehold.it/150x100" alt="Mishka store">
+          </div>
+          <nav class="main-nav">
+              <span class="main-nav__toggle"></span>
+              <div class="main-nav__wrapper">
+                  <ul class="main-nav__items">
+                      <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+                      <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+                      <li class="main-nav__item"><a href="#" class="main-nav__search">Поиск по сайту</a></li>
+                      <li class="main-nav__item"><a href="#" class="main-nav__basket">Корзина: пока пуста</a></li>
+                  </ul>
+              </div>
+          </nav>
+      </header>
+      <section class="our-products">
+          <h2 class="our-products__slogan">Милые штуки ручной работы для дома</h2>
+          <a href="" class="our-products__link">Предметы интерьера</a>
+          <a href="" class="our-products__link">Детские игрушки   </a>
+      </section>
+      <section class="product-card">
+          <h2 class="product-card__item product-card__item--week-item">Вязаные корзинки</h2>
+          <p class="product-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="product-card__features">
+              <tr>
+                  <td class="product-card__field">Цвет:</td>
+                  <td class="product-card__value">«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                  <td class="product-card__field">Диаметр:</td>
+                  <td class="product-card__value">25см</td>
+              </tr>
+              <tr>
+                  <td class="product-card__field">Высота:</td>
+                  <td class="product-card__value">15см</td>
+              </tr>
+          </table>
+          <div class="product-card__image">
+              <a href="#"><img src="http://placehold.it/150x100" alt="Вязаные корзинки"></a>
+          </div>
+          <p class="product-card__price">Цена: 990 руб.</p>
+          <a class="product-card__buy btn" href="#" >Заказать</a>
+          <div class="card-purchase card-purchase--hidden">
+              <h2 class="card-purchase__title">Добавить в корзину</h2>
+              <p class="card-purchase__description">Выберите размер:</p>
+              <form action="post" class="card-purchase__option">
+                <div class="card-purchase__wrapper">
+                  <input type="radio" class="card-purchase__input" name="size" id="size-input-1" checked>
+                  <label class="card-purchase__toggle" for="size-input-1">s</label>
+                  <input type="radio" class="card-purchase__input" name="size" id="size-input-2">
+                  <label class="card-purchase__toggle" for="size-input-1">m</label>
+                  <input type="radio" class="card-purchase__input" name="size" id="size-input-3">
+                  <label class="card-purchase__toggle" for="size-input-1">l</label>
+                </div>
+              </form>
+              <a href="" class="card-purchase__add btn">Добавить</a>
+          </div>
+      </section>
+      <section class="about-us">
+          <h2 class="about-us__title">Коротко о нас:</h2>
+          <div class="about-us__items">
+              <ul>
+                  <li class="about-us__item">Экологически чистые материалы</li>
+<!--                  <li class="about-us__item about-us__item--img-1"></li>  Олег, иконку надо будет через модификатор ставить?? -->
+                  <li class="about-us__item">кандинавский стиль по российской цене</li>
+                  <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+                  <li class="about-us__item">Связано вручную с любовью и умилением</li>
+                  <li class="about-us__item">Поддержка отечественного производителя</li>
+                  <li class="about-us__item">Поставляется в подарочной упаковке</li>
+              </ul>
+          </div>
+      </section>
+      <section class="reviews">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__wrapper slider">
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+            <div class="reviews__items">
+                <blockquote class="reviews__item slider__item">
+                    <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                    <cite class="reviews__author-name">Анастасия Красильникова<a href="#" class="reviews__author-link">@misssssiskras</a></cite>
+                </blockquote>
+                <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+                <button class="reviews__next" type="button">Следующий отзыв</button> 
+            </div>
+          </div>
+          <a class="reviews__write btn" href="">Написать</a> 
+      </section>
+      <section class="contact">
+          <h2 class="contact__title">Контакты</h2>
+          <table class="contact__info">
+              <tr>
+                  <td class="contact__field">e-mail:</td>
+                  <td class="contact__value">info@mimimishkashop.ru</td>
+              </tr>
+              <tr>
+                  <td class="contact__field">адрес:</td>
+                  <td class="contact__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+              </tr>
+          </table>
+      </section>
+      <section class="map">
+          <div class="map__wrapper">
+<!--              карту думаю реализовать через background и js-->
+          </div>
+          <a href="#" class="btn">Напишите нам</a>
+      </section>
+      <footer class="page-footer">
+        <p class="page-footer__social">
+          <span class="social-links">
+            <a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </span>
+        </p>
+        <p class="page-footer__copyright">Разработано:<a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
+      </footer>
   </body>
 </html>
