@@ -10,7 +10,7 @@
         <img src="http://placehold.it/150x100" alt="Mishka store">
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle"></button>
+        <button class="main-nav__toggle" type="button"></button>
         <ul class="main-nav__items">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a></li>
@@ -71,7 +71,7 @@
         <button class="reviews__prev" type="button">Предыдущий отзыв</button>
         <button class="reviews__next" type="button">Следующий отзыв</button>
       </div>
-      <a class="reviews__write btn" href="№">Написать</a>
+      <a class="reviews__write btn" href="#">Написать</a>
     </section>
     <section class="contact">
       <h2 class="contact__title">Контакты</h2>
@@ -87,7 +87,7 @@
       </table>
     </section>
     <div class="map">
-      <div class="map__wrapper">
+      <div class="map__container">
         <!--              карту думаю реализовать через background и js-->
       </div>
       <a href="#" class="btn">Напишите нам</a>
@@ -106,7 +106,7 @@
     <div class="card-purchase card-purchase--hidden">
       <h2 class="card-purchase__title">Добавить в корзину</h2>
       <p class="card-purchase__description">Выберите размер:</p>
-      <form action="post" class="card-purchase__option">
+      <form action="/" method="post" class="card-purchase__option">
         <div class="card-purchase__wrapper">
           <input type="radio" class="card-purchase__input" name="size" id="size-input-1" value="small" checked>
           <label class="card-purchase__label" for="size-input-1">s</label>
