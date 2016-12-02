@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="http://placehold.it/150x100" alt="Mishka store">
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"></button>
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="order-form">
+      <h1 class="order-form__title">Вязание на заказ</h1>
+      <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form action="/" method="post">
+        <!--       action адрес программы или документа, который обрабатывает данные формы-->
+        <fieldset  class="order-form__item radio-module">
+          <legend class="radio-module__title">Тип</legend>
+          <input class="radio-module__input" type="radio" name="item-type" value="interior-accessories" id="interior-accessories" checked>
+          <label class="radio-module__label" for="interior-accessories">Аксессуар для интерьера</label>
+          <input class="radio-module__input" type="radio" name="item-type" value="childrens-toy" id="childrens-toy">
+          <label class="radio-module__label" for="childrens-toy">Детская игрушка</label>
+        </fieldset >
+        <fieldset class="order-form__item checkbox-module">
+          <legend class="checkbox-module__title">Цвет</legend>
+          <input class="checkbox-module__input" type="checkbox" name="item-color" id="white-color" checked>
+          <label class="checkbox-module__label" for="white-color">Белый</label>
+
+          <input class="checkbox-module__input" type="checkbox" name="item-color" id="grey-color" checked>
+          <label class="checkbox-module__label" for="grey-color">Серый</label>
+
+          <input class="checkbox-module__input" type="checkbox" name="item-color" id="tiffani-color">
+          <label class="checkbox-module__label" for="tiffani-color">«Тиффани»</label>
+
+          <input class="checkbox-module__input" type="checkbox" name="item-color" id="black-color">
+          <label class="checkbox-module__label" for="black-color">Черный</label>
+
+          <input class="checkbox-module__input" type="checkbox" name="item-color" id="pink-color">
+          <label class="checkbox-module__label" for="pink-color">Розовый</label>
+
+          <input class="checkbox-module__input" type="checkbox" name="item-color" id="orange-color">
+          <label class="checkbox-module__label" for="orange-color">Оранжевый</label>
+        </fieldset>
+        <fieldset class="order-form__item text-module">
+          <legend class="text-module__title">Фио</legend>
+          <label class="text-module__label" for="input-first-name">Имя:</label>
+          <input class="text-module__input" type="text" name="first-name" id="input-first-name" placeholder="Введите ваше имя*" required>
+          <label class="text-module__label" for="input-second-name">Фамилия:</label>
+          <input class="text-module__input" type="text" name="second-name" id="input-second-name" placeholder="Укажите фамилию*" required>
+          <label class="text-module__label" for="input-third-name">Отчество:</label>
+          <input class="text-module__input" type="text" name="third-name" id="input-third-name" placeholder="Отчество, если желаете">
+        </fieldset>
+        <fieldset class="order-form__item tel-module">
+          <legend class="tel-module__title">Тел</legend>
+          <input class="tel-module__input" type="tel" name="telephone" id="input-tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+        </fieldset>
+        <fieldset class="order-form__item mail-module">
+          <legend class="mail-module__title">E-mail</legend>
+          <input class="mail-module__input" type="email" name="email" id="input-email" placeholder="Ваш Email*" required>
+        </fieldset>
+        <fieldset class="order-form__item textarea-module">
+          <legend class="textarea-module__title">Доп</legend>
+          <textarea name="comments" id="comments" cols="21" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <p class="order-form__required">*Поля обязательны для заполнения</p>
+        <input class="btn" type="submit" value="Отправить заказ" name="send">
+      </form>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__social">
+        <a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        <a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+      </div>
+      <p class="page-footer__copyright">
+        Разработано:
+        <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </p>
+    </footer>
+  </body>
+</html>
