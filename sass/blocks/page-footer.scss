@@ -10,14 +10,14 @@
     display: block;
 
 
-  } 
+  }
 
   &__copyright {
     @include font (bold, bold, 19px, 18px);
     margin: 0;
     margin-top: 30px;
 
-  } 
+  }
   &__copyright-link {
     display: inline-block;
     vertical-align: top;
