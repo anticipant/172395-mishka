@@ -2,7 +2,7 @@
   "name": "mishka",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
+  "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "autoprefixer": "6.5.3",
     "grunt": "1.0.1",
@@ -27,8 +27,5 @@
   ],
   "engines": {
     "node": "6.7"
-  },
-  "dependencies": {
-    "normalize.css": "^5.0.0"
   }
 }
