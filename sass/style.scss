@@ -1,8 +1,8 @@
-@import "normalize.scss";
-@import "mixin.scss";
-@import "variables.scss";
-@import "blocks/body.scss";
+@import "global/normalize.scss";
+@import "global/variables.scss";
 @import "global/fonts.scss";
+@import "mixin.scss";
+@import "global/global.scss";
 @import "blocks/about-us.scss";
 @import "blocks/btn.scss";
 @import "blocks/card-purchase.scss";

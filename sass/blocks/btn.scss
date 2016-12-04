@@ -1,7 +1,7 @@
 .btn {
-  //  строка для трависа
+  @include font(17px, 26px);
+  font-weight: bold;
   background-color: #fff;
-  @include font(bold, bold, 17px, 26px);
   color: #444444;
   border: 2px solid #444444;
   text-decoration: none;
