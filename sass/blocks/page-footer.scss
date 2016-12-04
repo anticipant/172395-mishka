@@ -1,0 +1,32 @@
+.page-footer {
+  outline: 1px dashed #000;
+  background-color: #f1f1f1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+
+  &__social {
+    font-size: 0;
+    display: block;
+
+
+  } 
+
+  &__copyright {
+    @include font (bold, bold, 19px, 18px);
+    margin: 0;
+    margin-top: 30px;
+
+  } 
+  &__copyright-link {
+    display: inline-block;
+    vertical-align: top;
+    width: 33px;
+    height: 38px;
+    margin-top: -5px;
+    margin-left: 10px;
+    background-image: url(../../img/logo-htmlacademy.svg);
+    background-repeat: no-repeat;
+    font-size: 0;
+  }
+}

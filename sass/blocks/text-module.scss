@@ -1,0 +1,23 @@
+.text-module {
+
+  &__title {
+    @include font (bold, bold, 17px, 16px);
+    color: #63d1bb;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+  &__label {
+    @include font (bold, bold, 17px, 18px);
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  &__input {
+    @include font (normal, normal, 17px, 18px);
+    color: #444444;
+    border: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,33 @@
+.contact {
+  outline: 1px dashed #000;
+  padding-top: 45px;
+  padding-bottom: 40px;
+
+  &__title {
+    @include font (bold, bold, 18px, 30px);
+    margin: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  &__info {
+    @include font (bold, bold, 18px, 30px);
+    margin: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+
+  }
+
+  &__field {
+    @include font (normal, normal, 15px, 30px);
+    color: #444444;
+    margin: 0;
+  }
+
+  &__value {
+    @include font (normal, normal, 15px, 30px);
+    color: #444444;
+    margin: 0;
+  }
+
+}

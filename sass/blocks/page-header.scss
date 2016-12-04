@@ -1,0 +1,5 @@
+.page-header {
+  background-color: #fff;
+  outline: 1px dashed #000;
+  @include clearfix();
+}

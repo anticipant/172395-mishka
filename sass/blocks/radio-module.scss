@@ -1,0 +1,19 @@
+.radio-module {
+
+  &__title {
+    @include font (bold, bold, 17px, 16px);
+    color: #63d1bb;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+  }
+  &__label {
+    @include font (bold, bold, 17px, 18px);
+    display: block;
+    padding-bottom: 35px;
+    padding-left: 60px;
+  }
+
+  &__input {
+    //    display: none;
+  }
+}
