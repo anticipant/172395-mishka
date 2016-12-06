@@ -1,12 +1,12 @@
 .checkbox-module__title {
-  @include font (17px, 16px);
+  @include font ($fs-medium, $lh-tiny);
   font-weight: bold;
-  color: #63d1bb;
+  color: $base-green;
   text-transform: uppercase;
   padding-bottom: 35px;
 }
 .checkbox-module__label {
-  @include font (17px, 18px);
+  @include font ($fs-medium, $lh-small);
   font-weight: bold;
   display: block;
   padding-bottom: 40px;

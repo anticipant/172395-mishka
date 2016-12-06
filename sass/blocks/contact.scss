@@ -4,26 +4,26 @@
   padding-bottom: 40px;
 }
 .contact__title {
-  @include font (18px, 30px);
+  @include font ($fs-large, $lh-large);
   font-weight: bold;
   margin: 0;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: $modile-indent;
+  margin-right: $modile-indent;
 }
 .contact__info {
-  @include font (18px, 30px);
+  @include font ($fs-large, $lh-large);
   font-weight: bold;
   margin: 0;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: $modile-indent;
+  margin-right: $modile-indent;
 }
 .contact__field {
-  @include font (15px, 30px);
-  color: #444444;
+  @include font ($fs-small, $lh-large);
+  color: $text-color;
   margin: 0;
 }
 .contact__value {
-  @include font (15px, 30px);
-  color: #444444;
+  @include font ($fs-small, $lh-large);
+  color: $text-color;
   margin: 0;
 }

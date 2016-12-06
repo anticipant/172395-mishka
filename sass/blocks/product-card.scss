@@ -1,13 +1,13 @@
 .product-card {
   outline: 1px dashed #e12020;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: $modile-indent;
+  margin-right: $modile-indent;
 }
 .product-card__image {
-  margin-top: 30px;
+  margin-top: $modile-indent;
 }
 .product-card__item {
-  @include font (17px, 24px);
+  @include font ($fs-medium, $lh-medium);
   font-weight: bold;
   margin: 0;
   margin-top: 30px;
@@ -21,8 +21,8 @@
   text-decoration: none;
 }
 .product-card__description {
-  @include font (13px, 30px);
-  color: #444444;
+  @include font ($fs-tiny, $lh-large);
+  color: $text-color;
   margin: 0;
   margin-top: 19px;
   padding-left: 28px;
@@ -32,7 +32,7 @@
   outline: 1px dashed #e12020;
 }
 .product-card__price {
-  @include font (15px, 24px);
+  @include font ($fs-small, $lh-medium);
   font-weight: bold;
   margin: 0;
   margin-bottom: 30px;

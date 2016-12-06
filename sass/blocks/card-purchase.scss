@@ -2,29 +2,29 @@
   outline: 1px dashed #000;
 }
 .card-purchase__title {
-  @include font (25px, 30px);
+  @include font ($fs-huge, $lh-large);
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: $modile-indent;
+  margin-right: $modile-indent;
 }
 .card-purchase__description {
-  @include font (15px, 30px);
-  color: #444444;
+  @include font ($fs-small, $lh-large);
+  color: $text-color;
   text-align: center;
   margin: 0;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: $modile-indent;
+  margin-right: $modile-indent;
 }
 .card-purchase__wrapper {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: $modile-indent;
+  margin-right: $modile-indent;
 }
 .card-purchase__label {
-  @include font (17px, 16px);
-  color: #444444;
+  @include font ($fs-medium, $lh-tiny);
+  color: $text-color;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
@@ -35,7 +35,7 @@
   border: 2px solid #ececec;
 }
 .card-purchase__add {
-  background-color: #63d1bb;
+  background-color: $base-green;
   color: #fff;
   width: 260px;
   padding-top: 20px;

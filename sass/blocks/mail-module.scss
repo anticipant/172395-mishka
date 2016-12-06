@@ -1,14 +1,14 @@
 .mail-module__title {
-  @include font (17px, 16px);
+  @include font ($fs-medium, $lh-tiny);
   font-weight: bold;
-  color: #63d1bb;
+  color: $base-green;
   text-transform: uppercase;
   padding-bottom: 19px;
   padding-top: 25px;
 }
 .mail-module__input {
-  @include font (17px, 18px);
-  color: #444444;
+  @include font ($fs-medium, $lh-small);
+  color: $text-color;
   border: none;
   padding-bottom: 10px;
   padding-top: 10px;

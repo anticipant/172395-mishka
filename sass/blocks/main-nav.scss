@@ -10,7 +10,7 @@
   padding-bottom: 30px;
 }
 .main-nav__link {
-  @include font(17px);
+  @include font($fs-medium);
   font-weight: bold;
   text-decoration: none;
   color: #000;

@@ -1,10 +1,10 @@
 .video-blog {
   outline: 1px dashed #000;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: $modile-indent;
+  margin-right: $modile-indent;
 }
 .video-blog__title {
-  @include font (17px, 24px);
+  @include font ($fs-medium, $lh-medium);
   font-weight: bold;
   margin: 0;
   margin-top: 30px;
@@ -31,12 +31,12 @@
   transform: translateX(-50%);
 }
 .video-blog__description {
-  @include font (13px, 24px);
-  color: #444444;
+  @include font ($fs-tiny, $lh-medium);
+  color: $text-color;
   margin: 0;
   margin-top: 35px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: $modile-indent;
+  padding-right: $modile-indent;
 }
 .video-blog__buy {
   padding-top: 18px;

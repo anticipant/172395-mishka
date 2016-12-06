@@ -3,7 +3,8 @@
   padding-bottom: 58px;
 }
 .catalog__title {
-  @include font (27px, 30px);
+  @include font ($h1-font-size, $lh-large);
+  color: $h1-color;
   font-weight: bold;
   text-align: center;
   background-color: #f1f1f1;

@@ -5,24 +5,25 @@
   outline: 1px dashed #000;
 }
 .our-products__slogan {
-  @include font(27px, 30px);
+  @include font($h1-font-size, $lh-large);
+  color: $h1-color;
   font-weight: bold;
   text-align: center;
   padding-top: 75px;
   padding-bottom: 120px;
   margin: 0;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: $modile-indent;
+  margin-right: $modile-indent;
 }
 .our-products__link {
-  @include font(19px, 24px);
+  @include font(19px, $lh-medium);
   font-weight: bold;
   background-color: #63d1bb;
   color: #fff;
   text-decoration: none;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 30px;
+  padding-left: $modile-indent;
   padding-right: 160px;
   display: inline-block;
   background-image: url(../img/icon-interior.svg);
