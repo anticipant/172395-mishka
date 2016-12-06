@@ -1,19 +1,20 @@
 .text-module__title {
   @include font ($fs-medium, $lh-tiny);
   font-weight: bold;
-  color: $base-green;
+  color: $order-form-legend-color;
   text-transform: uppercase;
   padding-bottom: 30px;
 }
 .text-module__label {
   @include font ($fs-medium, $lh-small);
+  color: $order-form-text-color-1;
   font-weight: bold;
   display: block;
   padding-bottom: 5px;
 }
 .text-module__input {
   @include font ($fs-medium, $lh-small);
-  color: $text-color;
+  color: $order-form-text-color-2;
   border: none;
   padding-bottom: 10px;
   padding-top: 10px;

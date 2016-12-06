@@ -4,17 +4,19 @@
 }
 .about-us__title {
   @include font($lh-large, $lh-large);
+  @include mobile-indent();
   font-weight: bold;
   margin: 0;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .about-us__items {
+  @include mobile-indent();
   list-style: none;
   margin: 0;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
   padding: 0;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .about-us__item {
   @include font($fs-medium, 20px);

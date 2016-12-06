@@ -1,10 +1,11 @@
 .product-card {
+  @include mobile-indent();
   outline: 1px dashed #e12020;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .product-card__image {
-  margin-top: $modile-indent;
+  padding-top: $mobile-indent;
 }
 .product-card__item {
   @include font ($fs-medium, $lh-medium);
@@ -14,7 +15,7 @@
   padding-left: 28px;
 }
 .product-card__item a {
-  @include font (17px, 24px);
+  @include font ($fs-medium, $lh-medium);
   font-weight: bold;
   color: #000;
   margin: 0;
@@ -22,7 +23,7 @@
 }
 .product-card__description {
   @include font ($fs-tiny, $lh-large);
-  color: $text-color;
+  color: $product-card-text-color;
   margin: 0;
   margin-top: 19px;
   padding-left: 28px;

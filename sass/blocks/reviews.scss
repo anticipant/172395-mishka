@@ -6,14 +6,15 @@
 }
 .reviews__title {
   @include font ($lh-large, $lh-large);
+  @include mobile-indent();
   font-weight: bold;
   margin: 0;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .reviews__item {
   @include font ($fs-small, $lh-large);
-  color: $text-color;
+  color: $reviews-text-color;
 }
 .reviews__author-name {
   @include font ($fs-large, $lh-medium);
@@ -22,11 +23,11 @@
 }
 .reviews__author-link {
   @include font ($fs-large, $lh-large);
-  color: $text-color;
+  color: $reviews-text-color;
 }
 .reviews__prev {
   padding: 0;
-  margin-left: $modile-indent;
+  padding-left: $mobile-indent;
   background-image: url(../img/icon-left-arrow.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -38,7 +39,7 @@
 }
 .reviews__next {
   padding: 0;
-  margin-right: $modile-indent;
+  padding-right: $mobile-indent;
   background-image: url(../img/icon-right-arrow.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -49,9 +50,10 @@
   width: 128px;
 }
 .reviews__write {
+  @include mobile-indent();
   padding-top: 17px;
   padding-bottom: 17px;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
   margin-top: 38px;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }

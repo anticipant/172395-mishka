@@ -5,25 +5,27 @@
 }
 .contact__title {
   @include font ($fs-large, $lh-large);
+  @include mobile-indent();
   font-weight: bold;
   margin: 0;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .contact__info {
   @include font ($fs-large, $lh-large);
+  @include mobile-indent();
   font-weight: bold;
   margin: 0;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .contact__field {
   @include font ($fs-small, $lh-large);
-  color: $text-color;
+  color: $contact-text-color;
   margin: 0;
 }
 .contact__value {
   @include font ($fs-small, $lh-large);
-  color: $text-color;
+  color: $contact-text-color;
   margin: 0;
 }

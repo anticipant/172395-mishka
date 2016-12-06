@@ -14,35 +14,39 @@
 }
 .order-form__description {
   @include font ($fs-tiny, $lh-medium);
+  @include mobile-indent();
   color: $text-color;
   margin: 0;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 .order-form__item {
+  @include mobile-indent();
   outline: 1px dashed #ff0000;
   border: none;
   margin: 0;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
   padding: 0;
 }
 .order-form__required {
   @include font (14px, $lh-tiny);
+  @include mobile-indent();
   color: $text-color;
   margin: 0;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .order-form__btn {
   @include font($fs-medium, $lh-tiny);
+  @include mobile-indent();
   font-weight: bold;
   padding: 0;
   padding-top: 18px;
   padding-bottom: 18px;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
-  margin-top: $modile-indent;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
+  margin-top: $mobile-indent;
 }

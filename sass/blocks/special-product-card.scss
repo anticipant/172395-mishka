@@ -6,51 +6,58 @@
 }
 .special-product-card__title {
   @include font($lh-large, $lh-large);
+  @include mobile-indent();
   font-weight: bold;
   margin: 0;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .special-product-card__promo-title {
   @include font($fs-medium, $lh-tiny);
+  @include mobile-indent();
   font-weight: bold;
   color: $base-green;
   margin: 0;
   margin-top: 5px;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .special-product-card__description {
   @include font($fs-small, $lh-medium);
-  color: $text-color;
+  color: $product-card-text-color;
   margin: 0;
   margin-top: 20px;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+  @include mobile-indent();
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .special-product-card__features {
   @include font($fs-small, 20px);
-  color: $text-color;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+  @include mobile-indent();
+  color: $product-card-text-color;
   margin-top: 30px;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .special-product-card__image {
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+  @include mobile-indent();
   margin-top: 25px;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .special-product-card__price {
   @include font($fs-medium, $lh-medium);
+  @include mobile-indent();
   font-weight: bold;
-  color: $text-color;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+  color: $product-card-text-color;
   text-align: center;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .special-product-card__buy {
+  @include mobile-indent();
   padding-top: 18px;
   padding-bottom: 18px;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }

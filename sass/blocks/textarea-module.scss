@@ -1,14 +1,14 @@
 .textarea-module__title {
   @include font ($fs-medium, $lh-tiny);
   font-weight: bold;
-  color: $base-green;
+  color: $order-form-legend-color;
   text-transform: uppercase;
   padding-bottom: 20px;
   padding-top: 25px;
 }
 .textarea-module__field {
   @include font ($fs-medium, $lh-small);
-  color: $text-color;
+  color: $order-form-text-color-2;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }

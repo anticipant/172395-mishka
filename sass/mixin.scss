@@ -11,6 +11,6 @@
   }
 }
 @mixin mobile-indent() {
-  margin-left: $mobile-indent;
-  margin-right: $mobile-indent;
+  padding-left: $mobile-indent;
+  padding-right: $mobile-indent;
 }

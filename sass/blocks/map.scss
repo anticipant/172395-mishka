@@ -11,8 +11,9 @@
   background-position: 50% 50%, 0 0;
 }
 .map__btn {
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+  @include mobile-indent();
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
   margin-top: 39px;
   padding-top: 16px;
   padding-bottom: 16px;

@@ -6,14 +6,15 @@
 }
 .our-products__slogan {
   @include font($h1-font-size, $lh-large);
+  @include mobile-indent();
   color: $h1-color;
   font-weight: bold;
   text-align: center;
   padding-top: 75px;
   padding-bottom: 120px;
   margin: 0;
-  margin-left: $modile-indent;
-  margin-right: $modile-indent;
+//  margin-left: $mobile-indent;
+//  margin-right: $mobile-indent;
 }
 .our-products__link {
   @include font(19px, $lh-medium);
@@ -23,7 +24,7 @@
   text-decoration: none;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: $modile-indent;
+  padding-left: $mobile-indent;
   padding-right: 160px;
   display: inline-block;
   background-image: url(../img/icon-interior.svg);
