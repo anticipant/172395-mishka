@@ -1,31 +1,36 @@
 .contact {
   outline: 1px dashed #000;
+
   padding-top: 45px;
   padding-bottom: 40px;
 }
 .contact__title {
-  @include font ($fs-large, $lh-large);
   @include mobile-indent();
-  font-weight: bold;
+  @include font ($fs-large, $lh-large);
+
   margin: 0;
-//  margin-left: $mobile-indent;
-//  margin-right: $mobile-indent;
+
+  font-weight: bold;
 }
 .contact__info {
-  @include font ($fs-large, $lh-large);
   @include mobile-indent();
-  font-weight: bold;
+  @include font ($fs-large, $lh-large);
+
   margin: 0;
-//  margin-left: $mobile-indent;
-//  margin-right: $mobile-indent;
+
+  font-weight: bold;
 }
 .contact__field {
   @include font ($fs-small, $lh-large);
-  color: $contact-text-color;
+
   margin: 0;
+
+  color: $contact-text-color;
 }
 .contact__value {
   @include font ($fs-small, $lh-large);
-  color: $contact-text-color;
+
   margin: 0;
+
+  color: $contact-text-color;
 }

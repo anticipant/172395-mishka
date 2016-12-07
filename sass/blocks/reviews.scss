@@ -1,59 +1,67 @@
 .reviews {
   outline: 1px dashed #000;
+
   padding-top: 55px;
   padding-bottom: 44px;
+
   font-size: 0;
 }
 .reviews__title {
-  @include font ($lh-large, $lh-large);
   @include mobile-indent();
-  font-weight: bold;
+  @include font ($lh-large, $lh-large);
+
   margin: 0;
-//  margin-left: $mobile-indent;
-//  margin-right: $mobile-indent;
+
+  font-weight: bold;
 }
 .reviews__item {
   @include font ($fs-small, $lh-large);
+
   color: $reviews-text-color;
 }
 .reviews__author-name {
   @include font ($fs-large, $lh-medium);
+
   font-weight: bold;
   color: #000;
 }
 .reviews__author-link {
   @include font ($fs-large, $lh-large);
+
   color: $reviews-text-color;
 }
 .reviews__prev {
+  height: 50px;
+  width: 128px;
   padding: 0;
   padding-left: $mobile-indent;
+
+  font-size: 0;
+
   background-image: url(../img/icon-left-arrow.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-color: #fff;
   border: 1px solid #ececec;
-  font-size: 0;
-  height: 50px;
-  width: 128px;
 }
 .reviews__next {
+  height: 50px;
+  width: 128px;
   padding: 0;
   padding-right: $mobile-indent;
+
+  font-size: 0;
+
   background-image: url(../img/icon-right-arrow.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-color: #fff;
   border: 1px solid #ececec;
-  font-size: 0;
-  height: 50px;
-  width: 128px;
 }
 .reviews__write {
   @include mobile-indent();
+
   padding-top: 17px;
   padding-bottom: 17px;
   margin-top: 38px;
-//  margin-left: $mobile-indent;
-//  margin-right: $mobile-indent;
 }

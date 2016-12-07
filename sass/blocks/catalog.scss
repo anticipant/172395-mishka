@@ -1,14 +1,18 @@
 .catalog {
   outline: 1px dashed #1bb353;
+
   padding-bottom: 58px;
 }
 .catalog__title {
   @include font ($h1-font-size, $lh-large);
-  color: $h1-color;
-  font-weight: bold;
-  text-align: center;
-  background-color: #f1f1f1;
+
   margin: 0;
   padding-top: 75px;
   padding-bottom: 75px;
+
+  color: $h1-color;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: #f1f1f1;
 }

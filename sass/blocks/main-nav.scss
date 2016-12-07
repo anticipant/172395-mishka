@@ -5,16 +5,20 @@
   padding-left: 30px;
 }
 .main-nav__item {
-  list-style: none;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  list-style: none;
 }
 .main-nav__link {
   @include font($fs-medium);
+
+  padding-left: 45px;
+
   font-weight: bold;
   text-decoration: none;
   color: #000;
-  padding-left: 45px;
+
   &--search {
     background-image: url(../img/icon-search.svg);
     background-repeat: no-repeat;
@@ -27,11 +31,12 @@
   }
 }
 .main-nav__toggle {
+  width: 25px;
+  height: 20px;
+
   background-image: url(../img/icon-menu-open.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 25px;
-  height: 20px;
   background-color: #fff;
   border: none;
 }

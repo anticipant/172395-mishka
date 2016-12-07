@@ -1,44 +1,49 @@
 .video-blog {
-  @include mobile-indent();
   outline: 1px dashed #000;
-//  margin-left: $mobile-indent;
-//  margin-right: $mobile-indent;
+
+  @include mobile-indent();
+
 }
 .video-blog__title {
   @include font ($fs-medium, $lh-medium);
-  font-weight: bold;
+
   margin: 0;
   margin-top: 30px;
   padding-left: 90px;
   padding-bottom: 26px;
+
+  font-weight: bold;
+
   background-image: url(../img/icon-video.svg);
   background-repeat: no-repeat;
   background-position: 30px 50%;
 }
 .video-blog__movie {
   height: 150px;
+
   background-image: url(../img/video-mobile@1x.jpg);
   background-repeat: no-repeat;
 }
 .video-blog__icon {
+  width: 105px;
+  height: 80px;
+  margin-left: 50%;
+
   background-image: url(../img/icon-play.svg);
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
-  width: 105px;
-  height: 80px;
-  margin-left: 50%;
-  //    margin-top: 50%;
+
   transform: translateX(-50%);
 }
 .video-blog__description {
-  @include font ($fs-tiny, $lh-medium);
   @include mobile-indent();
-  color: $video-blog-text-color;
+  @include font ($fs-tiny, $lh-medium);
+
   margin: 0;
   margin-top: 35px;
-//  padding-left: $mobile-indent;
-//  padding-right: $mobile-indent;
+
+  color: $video-blog-text-color;
 }
 .video-blog__buy {
   padding-top: 18px;

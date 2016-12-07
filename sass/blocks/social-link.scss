@@ -1,9 +1,10 @@
 .social-link {
-  font-size: 0;
   display: inline-block;
-  vertical-align: top;
   height: 35px;
   width: 35px;
+
+  font-size: 0;
+  vertical-align: top;
 
   &--in {
     background-image: url(../img/icon-insta.svg);
