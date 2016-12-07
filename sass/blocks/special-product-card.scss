@@ -1,0 +1,62 @@
+.special-product-card {
+  outline: 1px dashed #000;
+
+  padding-top: 30px;
+  padding-bottom: 35px;
+
+  background-color: #fff;
+}
+.special-product-card__title {
+  @include mobile-indent();
+  @include font($lh-large, $lh-large);
+
+  margin: 0;
+
+  font-weight: bold;
+}
+.special-product-card__promo-title {
+  @include mobile-indent();
+  @include font($fs-medium, $lh-tiny);
+
+  margin: 0;
+  margin-top: 5px;
+
+  font-weight: bold;
+  color: $base-green;
+}
+.special-product-card__description {
+  @include mobile-indent();
+  @include font($fs-small, $lh-medium);
+
+  margin: 0;
+  margin-top: 20px;
+
+  color: $product-card-text-color;
+}
+.special-product-card__features {
+  @include mobile-indent();
+  @include font($fs-small, 20px);
+
+  margin-top: 30px;
+
+  color: $product-card-text-color;
+}
+.special-product-card__image {
+  @include mobile-indent();
+
+  margin-top: 25px;
+}
+.special-product-card__price {
+  @include mobile-indent();
+  @include font($fs-medium, $lh-medium);
+
+  font-weight: bold;
+  color: $product-card-text-color;
+  text-align: center;
+}
+.special-product-card__buy {
+  @include mobile-indent();
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+}

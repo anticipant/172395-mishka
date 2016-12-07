@@ -1,0 +1,18 @@
+.textarea-module__title {
+  @include font ($fs-medium, $lh-tiny);
+
+  padding-bottom: 20px;
+  padding-top: 25px;
+
+  font-weight: bold;
+  color: $order-form-legend-color;
+  text-transform: uppercase;
+}
+.textarea-module__field {
+  @include font ($fs-medium, $lh-small);
+
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+  color: $order-form-text-color-2;
+}

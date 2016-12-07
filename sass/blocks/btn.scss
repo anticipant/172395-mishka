@@ -1,0 +1,16 @@
+.btn {
+  @include font($fs-medium, 26px);
+
+  width: 256px;
+  display: inline-block;
+
+  vertical-align: top;
+  font-weight: bold;
+  color: $text-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #fff;
+  border: 2px solid $text-color;
+}

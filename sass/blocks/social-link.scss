@@ -1,0 +1,23 @@
+.social-link {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+
+  font-size: 0;
+  vertical-align: top;
+
+  &--in {
+    background-image: url(../img/icon-insta.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--fb {
+    background-image: url(../img/icon-fb.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--tw {
+    background-image: url(../img/icon-twitter.svg);
+    background-repeat: no-repeat;
+  }
+}

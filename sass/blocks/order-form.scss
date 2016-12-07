@@ -1,0 +1,57 @@
+.order-form {
+  outline: 1px dashed #000;
+
+  padding-bottom: 55px;
+}
+.order-form__title {
+  @include font ($h1-font-size, $lh-large);
+
+  margin: 0;
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  color: $h1-color;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: #f1f1f1;
+}
+.order-form__description {
+  @include mobile-indent();
+  @include font ($fs-tiny, $lh-medium);
+
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  color: $text-color;
+}
+.order-form__item {
+  outline: 1px dashed #ff0000;
+
+  @include mobile-indent();
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+.order-form__required {
+  @include mobile-indent();
+  @include font (14px, $lh-tiny);
+
+  margin: 0;
+
+  color: $text-color;
+}
+.order-form__btn {
+  @include mobile-indent();
+  @include font($fs-medium, $lh-tiny);
+
+  padding: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-top: $mobile-indent;
+
+  font-weight: bold;
+}

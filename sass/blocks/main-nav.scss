@@ -1,0 +1,42 @@
+.main-nav {
+  background-color: #fff;
+}
+.main-nav__items {
+  padding-left: 30px;
+}
+.main-nav__item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  list-style: none;
+}
+.main-nav__link {
+  @include font($fs-medium);
+
+  padding-left: 45px;
+
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+
+  &--search {
+    background-image: url(../img/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+  }
+  &--basket {
+    background-image: url(../img/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+  }
+}
+.main-nav__toggle {
+  width: 25px;
+  height: 20px;
+
+  background-image: url(../img/icon-menu-open.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #fff;
+  border: none;
+}

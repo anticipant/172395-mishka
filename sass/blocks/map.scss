@@ -1,0 +1,21 @@
+.map {
+  outline: 1px dashed #000;
+
+  padding-bottom: 39px;
+}
+.map__container {
+  height: 457px;
+
+  background-image:
+    url(../img/icon-map-pin.svg),
+    url(../img/map-mobile@1x.jpg);
+  background-repeat: no-repeat no-repeat;
+  background-position: 50% 50%, 0 0;
+}
+.map__btn {
+  @include mobile-indent();
+
+  margin-top: 39px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
