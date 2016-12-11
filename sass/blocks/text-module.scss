@@ -1,29 +1,64 @@
 .text-module__title {
-  @include font ($fs-medium, $lh-tiny);
-
   padding-bottom: 30px;
 
+  @include font ($fs-medium, $lh-tiny);
   font-weight: bold;
   color: $order-form-legend-color;
   text-transform: uppercase;
 }
 .text-module__label {
-  @include font ($fs-medium, $lh-small);
-
   display: block;
   padding-bottom: 5px;
 
+  @include font ($fs-medium, $lh-small);
   color: $order-form-text-color-1;
   font-weight: bold;
 }
 .text-module__input {
-  @include font ($fs-medium, $lh-small);
-
   padding-bottom: 10px;
   padding-top: 10px;
   margin-bottom: 10px;
 
+  @include font ($fs-medium, $lh-small);
   color: $order-form-text-color-2;
 
   border: none;
+}
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .text-module__title {
+    position: absolute;
+    left: 0;
+    top: 67px;
+  }
+  .text-module__input {
+    display: inline-block;
+    width: 350px;
+    margin: 0;
+
+    font-size: 19px;
+    vertical-align: top;
+  }
+  .text-module__label {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+
+    font-size: 19px;
+    vertical-align: top;
+  }
+}
+
+//  PK
+
+@media #{$desktop-widths} {
+  .text-module__title {
+    left: 60px;
+  }
+  .text-module__input {
+    width: 570px;
+  }
 }

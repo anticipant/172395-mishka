@@ -19,3 +19,50 @@
   padding-top: 16px;
   padding-bottom: 16px;
 }
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .map {
+    padding-bottom: 57px;
+  }
+  .map__container {
+    background-color: #b5ad39;
+  }
+  .map__btn {
+    display: block;
+    width: 226px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 56px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+//  PK
+
+@media #{$desktop-widths} {
+  .map {
+    display: inline-block;
+    width: 525px;
+    padding-right: 50px;
+    padding-bottom: 105px;
+    padding-top: 70px;
+
+    vertical-align: top;
+  }
+  .map__container {
+    background-color: #b5ad39;
+  }
+  .map__btn {
+    position: absolute;
+    left: 225px;
+
+    display: block;
+    width: 226px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: -60px;
+  }
+}

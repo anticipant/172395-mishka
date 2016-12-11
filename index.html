@@ -3,21 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="Mishka store">
+        <img src="http://placehold.it/150x89" alt="Mishka store">
       </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"></button>
         <ul class="main-nav__items">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Новые поступления</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Распродажа</a></li>
+        </ul>
+        <ul class="main-nav__items">
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a></li>
         </ul>
+        <p class="main-nav__description">Бесплатная доставка по России</p>
       </nav>
     </header>
     <section class="our-products">
@@ -28,7 +37,9 @@
     <section class="special-product-card">
       <h2 class="special-product-card__title">Вязаные корзинки</h2>
       <p class="special-product-card__promo-title">Товар недели</p>
-      <p class="special-product-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      <p class="special-product-card__description">
+        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+      </p>
       <table class="special-product-card__features">
         <tr>
           <td class="special-product-card__field">Цвет:</td>
@@ -53,10 +64,12 @@
       <h2 class="about-us__title">Коротко о нас:</h2>
       <ul class="about-us__items">
         <li class="about-us__item about-us__item--flower-icon">Экологически чистые материалы</li>
-        <li class="about-us__item about-us__item--tangle-icon">Cкандинавский стиль по российской цене</li>
-        <li class="about-us__item about-us__item--photo-icon">Увеличивает лайки на фотографиях</li>
-        <li class="about-us__item about-us__item--rocket-icon">Связано вручную с любовью и умилением</li>
-        <li class="about-us__item about-us__item--heart-icon">Поддержка отечественного производителя</li>
+        <li class="about-us__item about-us__item--photo-icon">Cкандинавский стиль по российской цене</li>
+        <li class="about-us__item about-us__item--heart-icon">Увеличивает лайки на фотографиях</li>
+      </ul>
+      <ul class="about-us__items">
+        <li class="about-us__item about-us__item--tangle-icon">Связано вручную с любовью и умилением</li>
+        <li class="about-us__item about-us__item--rocket-icon">Поддержка отечественного производителя</li>
         <li class="about-us__item about-us__item--gift-icon">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
@@ -69,8 +82,10 @@
           <cite class="reviews__author-name">Анастасия Красильникова</cite>
           <a href="#" class="reviews__author-link">@misssssiskras</a>
         </blockquote>
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
+        <div class="reviews__control">
+          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next" type="button">Следующий отзыв</button>
+        </div>
       </div>
       <a class="reviews__write btn" href="#">Написать</a>
     </section>
@@ -94,6 +109,9 @@
       <a href="#" class="map__btn btn">Напишите нам</a>
     </div>
     <footer class="page-footer">
+      <div class="page-footer__logo">
+        <img src="http://placehold.it/150x100" alt="Mishka store">
+      </div>
       <div class="page-footer__social">
         <a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
         <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>

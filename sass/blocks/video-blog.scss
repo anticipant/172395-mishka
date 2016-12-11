@@ -5,13 +5,12 @@
 
 }
 .video-blog__title {
-  @include font ($fs-medium, $lh-medium);
-
   margin: 0;
   margin-top: 30px;
   padding-left: 90px;
   padding-bottom: 26px;
 
+  @include font ($fs-medium, $lh-medium);
   font-weight: bold;
 
   background-image: url(../img/icon-video.svg);
@@ -38,11 +37,10 @@
 }
 .video-blog__description {
   @include mobile-indent();
-  @include font ($fs-tiny, $lh-medium);
-
   margin: 0;
   margin-top: 35px;
 
+  @include font ($fs-tiny, $lh-medium);
   color: $video-blog-text-color;
 }
 .video-blog__buy {
@@ -50,4 +48,89 @@
   padding-bottom: 14px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .video-blog {
+    position: relative;
+
+    padding: 0;
+    padding-top: 455px;
+    padding-bottom: 45px;
+  }
+  .video-blog__title {
+    margin-left: 40px;
+
+  }
+  .video-blog__description {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 43px;
+  }
+  .video-blog__movie {
+    position: absolute;
+    top: 0;
+
+    height: 455px;
+    width: 100%;
+
+    background-size: contain;
+    background-color: rgba(110, 191, 216, 0.55);
+  }
+  .video-blog__buy {
+    display: block;
+    margin: 0 auto;
+    width: 580px;
+  }
+}
+
+//  PK
+
+@media #{$desktop-widths} {
+  .video-blog {
+    @include clearfix();
+    position: relative;
+
+    padding: 0;
+  }
+  .video-blog__title {
+    display: inline-block;
+    width: 150px;
+    margin: 0;
+    margin-left: 80px;
+    padding: 0;
+    padding-top: 100px;
+
+    vertical-align: top;
+
+    background-position: 0 50%;
+  }
+  .video-blog__description {
+    display: inline-block;
+    width: 250px;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin: 0;
+    margin-left: 80px;
+
+    font-size: $fs-small;
+    vertical-align: top;
+  }
+  .video-blog__movie {
+    position: static;
+    float: left;
+
+    height: 455px;
+    width: 682px;
+  }
+  .video-blog__buy {
+    display: inline-block;
+    margin-left: 80px;
+    width: 226px;
+
+    vertical-align: top;
+  }
 }

@@ -1,40 +1,37 @@
 .reviews {
   outline: 1px dashed #000;
 
+  @include mobile-indent();
   padding-top: 55px;
   padding-bottom: 44px;
 
   font-size: 0;
 }
 .reviews__title {
-  @include mobile-indent();
-  @include font ($lh-large, $lh-large);
-
   margin: 0;
 
+  @include font ($lh-large, $lh-large);
   font-weight: bold;
 }
 .reviews__item {
-  @include font ($fs-small, $lh-large);
+  margin: 0;
 
+  @include font ($fs-small, $lh-large);
   color: $reviews-text-color;
 }
 .reviews__author-name {
   @include font ($fs-large, $lh-medium);
-
   font-weight: bold;
   color: #000;
 }
 .reviews__author-link {
   @include font ($fs-large, $lh-large);
-
   color: $reviews-text-color;
 }
 .reviews__prev {
   height: 50px;
   width: 128px;
   padding: 0;
-  padding-left: $mobile-indent;
 
   font-size: 0;
 
@@ -48,7 +45,6 @@
   height: 50px;
   width: 128px;
   padding: 0;
-  padding-right: $mobile-indent;
 
   font-size: 0;
 
@@ -59,9 +55,74 @@
   border: 1px solid #ececec;
 }
 .reviews__write {
-  @include mobile-indent();
-
   padding-top: 17px;
   padding-bottom: 17px;
   margin-top: 38px;
+}
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .reviews {
+    position: relative;
+
+    min-height: 530px;
+    padding: 0;
+    @include tablet-indent();
+
+
+    background-image: url(../img/review@1x.jpg);
+    background-repeat: no-repeat;
+  }
+  .reviews__title {
+    padding: 0;
+    padding-top: 85px;
+    padding-bottom: 40px;
+
+    @include font($tablet-h-font-size, $tablet-h-line-height);
+  }
+  .reviews__item {
+    padding: 0;
+    margin: 0;
+
+    font-size: $fs-medium;
+  }
+  .reviews__author-name {
+    display: block;
+    padding-top: 40px;
+  }
+  .reviews__control {
+    position: absolute;
+    right: 50px;
+
+    margin-top: -50px;
+  }
+  .reviews__prev,
+  .reviews__next {
+    width: 80px;
+
+    border: none;
+  }
+  .reviews__write {
+    position: absolute;
+    right: 50px;
+    top: 79px;
+
+    width: 170px;
+    margin: 0;
+  }
+}
+
+//  PK
+
+@media #{$desktop-widths} {
+  .reviews {
+    padding-left: $desktop-big-indent;
+  }
+  .reviews__item {
+    padding-right: 110px;
+  }
+  .reviews__title {
+    @include font($desktop-h-font-size, $desktop-h-line-height);
+  }
 }

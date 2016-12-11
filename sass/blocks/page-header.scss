@@ -3,3 +3,44 @@
 
   background-color: #fff;
 }
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .page-header {
+    @include clearfix();
+
+    position: relative;
+
+    @include tablet-indent();
+  }
+  .page-header__logo {
+    float: left;
+
+    line-height: 0;
+  }
+}
+
+//  PK
+
+@media #{$desktop-widths} {
+  .page-header {
+    @include clearfix();
+
+    position: relative;
+
+    @include tablet-indent();
+    min-height: 89px;
+  }
+  .page-header__logo {
+    float: none;
+    position: absolute;
+    left: 50%;
+
+    margin-left: -75px;
+    display: inline-block;
+
+    line-height: 0;
+    vertical-align: top;
+  }
+}

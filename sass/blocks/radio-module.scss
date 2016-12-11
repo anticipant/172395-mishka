@@ -1,19 +1,44 @@
 .radio-module__title {
-  @include font ($fs-medium, $lh-tiny);
-
   padding-bottom: 35px;
 
+  @include font ($fs-medium, $lh-tiny);
   font-weight: bold;
   color: $order-form-legend-color;
   text-transform: uppercase;
 }
 .radio-module__label {
-  @include font ($fs-medium, $lh-small);
-
   display: block;
   padding-bottom: 35px;
   padding-left: 60px;
 
+  @include font ($fs-medium, $lh-small);
   color: $order-form-text-color-1;
   font-weight: bold;
+}
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .radio-module__title {
+    position: absolute;
+    left: 0;
+    top: 67px;
+  }
+  .radio-module__input {
+    display: none;
+  }
+  .radio-module__label {
+    padding-top: 17px;
+    padding-left: 80px;
+
+    font-size: 19px;
+  }
+}
+
+//  PK
+
+@media #{$desktop-widths} {
+  .radio-module__title {
+    left: 60px;
+  }
 }
