@@ -17,3 +17,30 @@
   color: $order-form-text-color-1;
   font-weight: bold;
 }
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .radio-module__title {
+    position: absolute;
+    left: 0;
+    top: 67px;
+  }
+  .radio-module__input {
+    display: none;
+  }
+  .radio-module__label {
+    padding-top: 17px;
+    padding-left: 80px;
+
+    font-size: 19px;
+  }
+}
+
+// Desktop
+
+@media #{$desktop-widths} {
+  .radio-module__title {
+    left: 60px;
+  }
+}

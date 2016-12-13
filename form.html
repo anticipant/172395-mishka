@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -15,14 +16,23 @@
         <ul class="main-nav__items">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Новые поступления</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Распродажа</a></li>
+        </ul>
+        <ul class="main-nav__items">
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a></li>
         </ul>
+        <p class="main-nav__description">Бесплатная доставка по России</p>
       </nav>
     </header>
     <div class="order-form">
       <h1 class="order-form__title">Вязание на заказ</h1>
-      <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <p class="order-form__description">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
       <form action="/" method="post">
         <!--       action адрес программы или документа, который обрабатывает данные формы-->
         <fieldset  class="order-form__item radio-module">
@@ -32,7 +42,7 @@
           <input class="radio-module__input" type="radio" name="item-type" value="childrens-toy" id="childrens-toy">
           <label class="radio-module__label" for="childrens-toy">Детская игрушка</label>
         </fieldset >
-        <fieldset class="order-form__item checkbox-module">
+        <fieldset class="order-form__item order-form__item--background-grey checkbox-module">
           <legend class="checkbox-module__title">Цвет</legend>
           <input class="checkbox-module__input" type="checkbox" name="item-color" id="white-color" checked>
           <label class="checkbox-module__label" for="white-color">Белый</label>
@@ -61,11 +71,11 @@
           <label class="text-module__label" for="input-third-name">Отчество:</label>
           <input class="text-module__input" type="text" name="third-name" id="input-third-name" placeholder="Отчество, если желаете">
         </fieldset>
-        <fieldset class="order-form__item tel-module">
+        <fieldset class="order-form__item order-form__item--background-grey tel-module">
           <legend class="tel-module__title">Тел</legend>
           <input class="tel-module__input" type="tel" name="telephone" id="input-tel" placeholder="+7 ХХХ ХХ ХХ*" required>
         </fieldset>
-        <fieldset class="order-form__item mail-module">
+        <fieldset class="order-form__item order-form__item--background-grey mail-module">
           <legend class="mail-module__title">E-mail</legend>
           <input class="mail-module__input" type="email" name="email" id="input-email" placeholder="Ваш Email*" required>
         </fieldset>
@@ -78,6 +88,9 @@
       </form>
     </div>
     <footer class="page-footer">
+      <div class="page-footer__logo">
+        <img src="http://placehold.it/150x100" alt="Mishka store">
+      </div>
       <div class="page-footer__social">
         <a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
         <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>

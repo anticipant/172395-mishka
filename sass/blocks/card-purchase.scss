@@ -23,13 +23,16 @@
 .card-purchase__wrapper {
   @include mobile-indent();
 }
+.card-purchase__input {
+  display: none;
+}
 .card-purchase__label {
   @include font ($fs-medium, $lh-tiny);
 
+  display: inline-block;
   margin: 0;
   padding-top: 17px;
   padding-bottom: 17px;
-  display: inline-block;
   width: 78px;
 
   color: $text-color;
@@ -49,4 +52,34 @@
 
   background-color: $base-green;
   border: none;
+}
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .card-purchase {
+    width: 566px;
+    margin: 0 auto;
+    padding-top: $tablet-indent;
+  }
+  .card-purchase__title {
+    @include font(30px, $desktop-h-line-height);
+  }
+  .card-purchase__description {
+    padding-bottom: 29px;
+
+    font-size: $fs-medium;
+  }
+  .card-purchase__wrapper {
+    display: block;
+    width: 350px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .card-purchase__label {
+    width: 108px;
+  }
+  .card-purchase__add {
+    width: 350px;
+  }
 }

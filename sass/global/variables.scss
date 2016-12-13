@@ -1,7 +1,11 @@
+$tablet-widths: "(min-width: 768px)";
+$desktop-widths: "(min-width: 1150px)";
+
 $base-green: #63d1bb;
 $base-black: #000000;
 $text-color: #444444;
 $transparent-text-color: rgba(68, 68, 68, 0.3);
+$border-color: #ececec;
 
 //Font-color
 $product-card-text-color: $text-color;
@@ -13,7 +17,7 @@ $order-form-text-color-1: $base-black;
 $order-form-text-color-2: $transparent-text-color;
 $h1-color: $base-black;
 
-
+// Font Size
 $fs-tiny: 13px;
 $fs-small: 15px;
 $fs-medium: 17px;
@@ -21,9 +25,21 @@ $fs-large: 18px;
 $fs-huge: 25px;
 $h1-font-size: 27px;
 
+$tablet-h-font-size: 43px;
+$desktop-h-font-size: 53px;
+
+
+//Line Height
 $lh-tiny: 16px;
 $lh-small: 18px;
 $lh-medium: 24px;
 $lh-large: 30px;
 
+$tablet-h-line-height: 50px;
+$desktop-h-line-height: 57px;
+
+
 $mobile-indent: 30px;
+$tablet-indent: 50px;
+$desktop-big-indent: 225px;
+$desktop-small-indent: 175px;

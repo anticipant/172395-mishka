@@ -43,7 +43,6 @@
 }
 .special-product-card__image {
   @include mobile-indent();
-
   margin-top: 25px;
 }
 .special-product-card__price {
@@ -59,4 +58,122 @@
 
   padding-top: 18px;
   padding-bottom: 18px;
+}
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .special-product-card {
+    @include tablet-indent();
+
+    position: relative;
+
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    font-size: 0;
+  }
+  .special-product-card__title {
+    @include font($tablet-h-font-size, $tablet-h-line-height);
+
+    display: inline-block;
+    padding: 0;
+    padding-bottom: 40px;
+
+    vertical-align: top;
+  }
+  .special-product-card__promo-title {
+    float: right;
+
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+
+    text-align: center;
+  }
+  .special-product-card__description {
+    @include font($fs-medium, $lh-large);
+
+    width: 334px;
+    margin: 0;
+    padding: 0;
+    padding-right: 55px;
+    box-sizing: border-box;
+  }
+  .special-product-card__features {
+    width: 334px;
+    padding: 0;
+  }
+  .special-product-card__image {
+    position: absolute;
+    top: 152px;
+    right: $tablet-indent;
+
+    width: 334px;
+    margin: 0;
+    padding: 0;
+  }
+  .special-product-card__image img {
+    width: 100%;
+  }
+  .special-product-card__price {
+    @include font(20px, $lh-medium);
+
+    width: 334px;
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 34px;
+
+  }
+  .special-product-card__buy {
+    padding-left: 0;
+    padding-right: 0;
+    width: 288px;
+  }
+}
+
+// Desktop
+
+@media #{$desktop-widths} {
+  .special-product-card {
+    padding-top: 132px;
+    padding-bottom: 73px;
+    padding-left: $desktop-big-indent;
+  }
+  .special-product-card__title {
+    @include font($desktop-h-font-size, $desktop-h-line-height);
+
+    position: relative;
+    z-index: 1;
+  }
+  .special-product-card__promo-title {
+    float: left;
+
+    margin-left: -130px;
+  }
+  .special-product-card__description {
+    @include font($fs-medium, $lh-large);
+
+    width: 350px;
+  }
+  .special-product-card__features {
+    width: 350px;
+  }
+  .special-product-card__image {
+    top: 71px;
+
+    width: 525px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .special-product-card__price {
+    width: 292px;
+
+    padding-top: 120px;
+  }
 }

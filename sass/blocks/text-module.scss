@@ -27,3 +27,41 @@
 
   border: none;
 }
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .text-module__title {
+    position: absolute;
+    left: 0;
+    top: 67px;
+  }
+  .text-module__input {
+    display: inline-block;
+    width: 350px;
+    margin: 0;
+
+    font-size: 19px;
+    vertical-align: top;
+  }
+  .text-module__label {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+
+    font-size: 19px;
+    vertical-align: top;
+  }
+}
+
+// Desktop
+
+@media #{$desktop-widths} {
+  .text-module__title {
+    left: 60px;
+  }
+  .text-module__input {
+    width: 570px;
+  }
+}

@@ -16,3 +16,33 @@
 
   background-color: #f1f1f1;
 }
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .catalog {
+    @include tablet-indent();
+  }
+  .catalog__title {
+    @include font ($tablet-h-font-size, $tablet-h-line-height);
+
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-bottom: 80px;
+    padding-top: 100px;
+
+  }
+}
+
+// Desktop
+
+@media #{$desktop-widths} {
+  .catalog {
+    @include tablet-indent();
+  }
+  .catalog__title {
+    @include font ($desktop-h-font-size, $desktop-h-line-height);
+
+    padding-bottom: 90px;
+  }
+}

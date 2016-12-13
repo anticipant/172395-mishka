@@ -4,8 +4,8 @@
   padding-top: 30px;
 }
 .about-us__title {
-  @include font($lh-large, $lh-large);
   @include mobile-indent();
+  @include font($lh-large, $lh-large);
 
   margin: 0;
 
@@ -15,7 +15,6 @@
   @include mobile-indent();
 
   margin: 0;
-  padding: 0;
 
   list-style: none;
 }
@@ -60,5 +59,56 @@
     background-image: url(../img/icon-feature-6.svg);
     background-repeat: no-repeat;
     background-position: 5px 30px;
+  }
+}
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .about-us {
+    @include clearfix();
+    @include tablet-indent();
+
+    padding-top: 57px;
+    padding-bottom: 70px;
+
+    font-size: 0;
+  }
+  .about-us__title {
+    @include font($tablet-h-font-size, $tablet-h-line-height);
+
+    padding: 0;
+  }
+  .about-us__items {
+    padding: 0;
+
+    &:first-of-type {
+      float: left;
+    }
+
+    &:last-of-type {
+      float: right;
+    }
+  }
+  .about-us__item {
+    width: 334px;
+    padding-right: 35px;
+    box-sizing: border-box;
+
+    font-size: 20px;
+  }
+}
+
+// Desktop
+
+@media #{$desktop-widths} {
+  .about-us {
+    @include desktop-big-indent();
+
+    padding-top: 67px;
+    padding-bottom: 80px;
+  }
+  .about-us__title {
+    @include font($desktop-h-font-size, $desktop-h-line-height);
   }
 }

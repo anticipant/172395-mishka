@@ -18,7 +18,6 @@
 
   margin: 0;
 
-  font-weight: bold;
 }
 .contact__field {
   @include font ($fs-small, $lh-large);
@@ -33,4 +32,74 @@
   margin: 0;
 
   color: $contact-text-color;
+}
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .contact {
+    @include tablet-indent();
+
+    background-image: url(../img/icon-flag.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50px;
+  }
+  .contact__title {
+    @include font($tablet-h-font-size, $tablet-h-line-height);
+
+    padding: 0;
+    padding-bottom: 60px;
+
+  }
+  .contact__info {
+    display: block;
+    padding: 0;
+
+    font-size: 0;
+  }
+  .contact__info tbody {
+    display: block;
+  }
+  .contact__info tr {
+    display: inline-block;
+    width: 334px;
+
+    vertical-align: top;
+  }
+  .contact__field {
+    @include font($fs-medium, $lh-large);
+
+    width: 70px;
+    padding: 0;
+    display: inline-block;
+
+    vertical-align: top;
+  }
+  .contact__value {
+    @include font($fs-medium, $lh-large);
+
+    padding: 0;
+    display: inline-block;
+    width: 230px;
+
+    vertical-align: top;
+  }
+}
+
+// Desktop
+
+@media #{$desktop-widths} {
+  .contact {
+    display: inline-block;
+    width: 300px;
+    padding-left:$desktop-big-indent;
+    padding-top: 150px;
+
+    vertical-align: top;
+
+    background-position: 110px 130px;
+  }
+  .contact__title {
+    @include font($desktop-h-font-size, $desktop-h-line-height);
+  }
 }

@@ -17,3 +17,44 @@
   color: $order-form-text-color-1;
   font-weight: bold;
 }
+
+//  Tablet
+
+@media #{$tablet-widths} {
+  .checkbox-module__title {
+    position: absolute;
+    left: 50px;
+    top: 67px;
+  }
+  .checkbox-module__input {
+    display: none;
+  }
+  .checkbox-module__label {
+    display: inline-block;
+    width: 250px;
+    padding: 0;
+    padding-left: 80px;
+    padding-top: 17px;
+    box-sizing: border-box;
+
+    font-size: 19px;
+  }
+}
+
+// Desktop
+
+@media #{$desktop-widths} {
+  .checkbox-module {
+    padding-right: $desktop-small-indent;
+  }
+  .checkbox-module__title {
+    left: 110px;
+  }
+  .checkbox-module__label {
+    width: 245px;
+    padding: 0;
+    padding-left: 80px;
+    padding-top: 17px;
+    box-sizing: border-box;
+  }
+}
