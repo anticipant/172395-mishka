@@ -1,16 +1,15 @@
 .video-blog {
   outline: 1px dashed #000;
-
   @include mobile-indent();
-
 }
 .video-blog__title {
+  @include font ($fs-medium, $lh-medium);
+
   margin: 0;
   margin-top: 30px;
   padding-left: 90px;
   padding-bottom: 26px;
 
-  @include font ($fs-medium, $lh-medium);
   font-weight: bold;
 
   background-image: url(../img/icon-video.svg);
@@ -37,10 +36,11 @@
 }
 .video-blog__description {
   @include mobile-indent();
+  @include font ($fs-tiny, $lh-medium);
+
   margin: 0;
   margin-top: 35px;
 
-  @include font ($fs-tiny, $lh-medium);
   color: $video-blog-text-color;
 }
 .video-blog__buy {
@@ -86,11 +86,12 @@
   }
 }
 
-//  PK
+// Desktop
 
 @media #{$desktop-widths} {
   .video-blog {
     @include clearfix();
+
     position: relative;
 
     padding: 0;

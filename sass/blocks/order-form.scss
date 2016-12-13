@@ -4,11 +4,12 @@
   padding-bottom: 55px;
 }
 .order-form__title {
+  @include font ($h1-font-size, $lh-large);
+
   margin: 0;
   padding-top: 75px;
   padding-bottom: 75px;
 
-  @include font ($h1-font-size, $lh-large);
   color: $h1-color;
   font-weight: bold;
   text-align: center;
@@ -17,38 +18,38 @@
 }
 .order-form__description {
   @include mobile-indent();
+  @include font ($fs-tiny, $lh-medium);
+
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
 
-  @include font ($fs-tiny, $lh-medium);
   color: $text-color;
 }
 .order-form__item {
   outline: 1px dashed #ff0000;
-
+  @include mobile-indent();
 
   margin: 0;
-  padding: 0;
-  @include mobile-indent();
 
   border: none;
 }
 .order-form__required {
   @include mobile-indent();
+  @include font (14px, $lh-tiny);
+
   margin: 0;
 
-  @include font (14px, $lh-tiny);
   color: $text-color;
 }
 .order-form__btn {
-  @include mobile-indent();
-  padding: 0;
+//  @include mobile-indent();
+  @include font($fs-medium, $lh-tiny);
+
   padding-top: 18px;
   padding-bottom: 18px;
-  margin-top: $mobile-indent;
+  margin: $mobile-indent $mobile-indent 0;
 
-  @include font($fs-medium, $lh-tiny);
   font-weight: bold;
 }
 
@@ -60,29 +61,27 @@
   }
 
   .order-form__title {
+    @include font($tablet-h-font-size, $tablet-h-line-height);
+
     margin-left: -50px;
     margin-right: -50px;
     padding-top: 100px;
-
-    @include font($tablet-h-font-size, $tablet-h-line-height);
   }
   .order-form__description {
+    @include font($fs-medium, $lh-large);
+
     padding: 0;
     padding-top: 80px;
     padding-bottom: 10px;
-
-    @include font($fs-medium, $lh-large);
   }
   .order-form__item {
     position: relative;
 
-    padding-left: 167px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0 50px 167px;
 
     text-align: left;
 
-    &--bg {
+    &--background-grey {
       margin-left: -50px;
       margin-right: -50px;
       padding-left: 217px;
@@ -91,20 +90,19 @@
     }
   }
   .order-form__required {
+    @include font($fs-medium, $lh-large);
+
     float: right;
 
     padding-top: 60px;
-
-    @include font($fs-medium, $lh-large);
-
   }
   .order-form__btn {
     width: 226px;
-    margin-top: 53px;
+    margin: 53px 0 0;
   }
 }
 
-//  PK
+// Desktop
 
 @media #{$desktop-widths} {
   .order-form {
@@ -112,9 +110,9 @@
   }
 
   .order-form__title {
-    padding-bottom: 90px;
-
     @include font($desktop-h-font-size, $desktop-h-line-height);
+
+    padding-bottom: 90px;
   }
   .order-form__description {
     @include desktop-small-indent();
@@ -125,7 +123,7 @@
 
     text-align: left;
 
-    &--bg {
+    &--background-grey {
       @include desktop-big-indent();
     }
   }

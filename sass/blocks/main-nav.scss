@@ -18,9 +18,10 @@
   list-style: none;
 }
 .main-nav__link {
+  @include font($fs-medium);
+
   padding-left: 45px;
 
-  @include font($fs-medium);
   font-weight: bold;
   text-decoration: none;
   color: #000;
@@ -118,6 +119,8 @@
     }
   }
   .main-nav__description {
+    @include font($fs-small, $lh-medium);
+
     position: absolute;
     right: $tablet-indent;
     top: 113px;
@@ -125,18 +128,17 @@
     display: block;
     margin: 0;
 
-    @include font($fs-small, $lh-medium);
     color: $text-color;
   }
 }
 
-//  PK
+// Desktop
 
 @media #{$desktop-widths} {
   .main-nav {
-    float: none;
-
     @include clearfix();
+
+    float: none;
   }
   .main-nav__items {
     display: inline-block;
@@ -209,14 +211,15 @@
     }
   }
   .main-nav__description {
-    display: block;
+    @include font($fs-small, $lh-medium);
+
     position: absolute;
     right: $tablet-indent;
     top: 113px;
 
+    display: block;
     margin: 0;
 
-    @include font($fs-small, $lh-medium);
     color: $text-color
   }
 }

@@ -3,18 +3,20 @@
 }
 .card-purchase__title {
   @include mobile-indent();
+  @include font ($fs-huge, $lh-large);
+
   margin: 0;
 
-  @include font ($fs-huge, $lh-large);
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
 .card-purchase__description {
   @include mobile-indent();
+  @include font ($fs-small, $lh-large);
+
   margin: 0;
 
-  @include font ($fs-small, $lh-large);
   color: $text-color;
   text-align: center;
 }
@@ -25,13 +27,14 @@
   display: none;
 }
 .card-purchase__label {
+  @include font ($fs-medium, $lh-tiny);
+
   display: inline-block;
   margin: 0;
   padding-top: 17px;
   padding-bottom: 17px;
   width: 78px;
 
-  @include font ($fs-medium, $lh-tiny);
   color: $text-color;
   text-transform: uppercase;
   text-align: center;
@@ -50,8 +53,6 @@
   background-color: $base-green;
   border: none;
 }
-
-
 
 //  Tablet
 

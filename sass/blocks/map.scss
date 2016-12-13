@@ -40,10 +40,12 @@
   }
 }
 
-//  PK
+// Desktop
 
 @media #{$desktop-widths} {
   .map {
+    position: relative;
+
     display: inline-block;
     width: 525px;
     padding-right: 50px;
@@ -57,12 +59,12 @@
   }
   .map__btn {
     position: absolute;
-    left: 225px;
+    left: -350px;
+    bottom: 105px;
 
     display: block;
     width: 226px;
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-top: -60px;
   }
 }

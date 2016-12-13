@@ -34,7 +34,7 @@
   font-size: 0;
   vertical-align: top;
 
-  background-image: url(../../img/logo-htmlacademy.svg);
+  background-image: url(../img/logo-htmlacademy.svg);
   background-repeat: no-repeat;
 }
 
@@ -45,6 +45,7 @@
   .page-footer {
     @include clearfix();
     @include tablet-indent();
+
     min-height: 143px;
     padding: 0;
   }

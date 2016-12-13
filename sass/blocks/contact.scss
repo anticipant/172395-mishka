@@ -6,27 +6,31 @@
 }
 .contact__title {
   @include mobile-indent();
+  @include font ($fs-large, $lh-large);
+
   margin: 0;
 
-  @include font ($fs-large, $lh-large);
   font-weight: bold;
 }
 .contact__info {
   @include mobile-indent();
+  @include font ($fs-large, $lh-large);
+
   margin: 0;
 
-  @include font ($fs-large, $lh-large);
 }
 .contact__field {
+  @include font ($fs-small, $lh-large);
+
   margin: 0;
 
-  @include font ($fs-small, $lh-large);
   color: $contact-text-color;
 }
 .contact__value {
+  @include font ($fs-small, $lh-large);
+
   margin: 0;
 
-  @include font ($fs-small, $lh-large);
   color: $contact-text-color;
 }
 
@@ -41,10 +45,11 @@
     background-position: 95% 50px;
   }
   .contact__title {
+    @include font($tablet-h-font-size, $tablet-h-line-height);
+
     padding: 0;
     padding-bottom: 60px;
 
-    @include font($tablet-h-font-size, $tablet-h-line-height);
   }
   .contact__info {
     display: block;
@@ -62,24 +67,26 @@
     vertical-align: top;
   }
   .contact__field {
+    @include font($fs-medium, $lh-large);
+
     width: 70px;
     padding: 0;
     display: inline-block;
 
-    @include font($fs-medium, $lh-large);
     vertical-align: top;
   }
   .contact__value {
+    @include font($fs-medium, $lh-large);
+
     padding: 0;
     display: inline-block;
     width: 230px;
 
-    @include font($fs-medium, $lh-large);
     vertical-align: top;
   }
 }
 
-//  PK
+// Desktop
 
 @media #{$desktop-widths} {
   .contact {

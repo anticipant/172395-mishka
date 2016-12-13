@@ -10,23 +10,25 @@
 }
 .our-products__slogan {
   @include mobile-indent();
+  @include font($h1-font-size, $lh-large);
+
   padding-top: 75px;
   padding-bottom: 120px;
   margin: 0;
 
-  @include font($h1-font-size, $lh-large);
   color: $h1-color;
   font-weight: bold;
   text-align: center;
 }
 .our-products__link {
+  @include font(19px, $lh-medium);
+
   display: inline-block;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: $mobile-indent;
   padding-right: 160px;
 
-  @include font(19px, $lh-medium);
   font-weight: bold;
   color: #fff;
   text-decoration: none;
@@ -54,6 +56,8 @@
     background-size: cover;
   }
   .our-products__slogan {
+    @include font($tablet-h-font-size, $tablet-h-line-height);
+
     padding: 0;
     padding-top: 160px;
     padding-bottom: 370px;
@@ -61,7 +65,6 @@
     margin-left: 80px;
     margin-right: 80px;
 
-    @include font($tablet-h-font-size, $tablet-h-line-height);
   }
   .our-products__link {
     width: 50%;
@@ -69,14 +72,14 @@
   }
 }
 
-//  PK
+// Desktop
 
 @media #{$desktop-widths} {
   .our-products__slogan {
+    @include font($desktop-h-font-size, $desktop-h-line-height);
+
     margin-left: $desktop-small-indent;
     margin-right: $desktop-small-indent;
-
-    @include font($desktop-h-font-size, $desktop-h-line-height);
   }
   .our-products__link {
     width: 50%;

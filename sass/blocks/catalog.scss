@@ -4,11 +4,12 @@
   padding-bottom: 58px;
 }
 .catalog__title {
+  @include font ($h1-font-size, $lh-large);
+
   margin: 0;
   padding-top: 75px;
   padding-bottom: 75px;
 
-  @include font ($h1-font-size, $lh-large);
   color: $h1-color;
   font-weight: bold;
   text-align: center;
@@ -23,24 +24,25 @@
     @include tablet-indent();
   }
   .catalog__title {
+    @include font ($tablet-h-font-size, $tablet-h-line-height);
+
     margin-left: -50px;
     margin-right: -50px;
     margin-bottom: 80px;
     padding-top: 100px;
 
-    @include font ($tablet-h-font-size, $tablet-h-line-height);
   }
 }
 
-//  PK
+// Desktop
 
 @media #{$desktop-widths} {
   .catalog {
     @include tablet-indent();
   }
   .catalog__title {
-    padding-bottom: 90px;
-
     @include font ($desktop-h-font-size, $desktop-h-line-height);
+
+    padding-bottom: 90px;
   }
 }
