@@ -43,28 +43,22 @@
 
 @media #{$tablet-widths} {
   .page-footer {
-    @include clearfix();
-    @include tablet-indent();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $tablet-indent;
 
-    min-height: 143px;
-    padding: 0;
   }
   .page-footer__logo {
-    float: left;
-
     display: block;
-    padding-top: 20px;
   }
   .page-footer__social {
     display: inline-block;
-    padding-top: 57px;
+    padding: 54px 0;
 
     vertical-align: top;
   }
   .page-footer__copyright {
-    float: right;
-
     margin: 0;
-    padding-top: 57px;
   }
 }

@@ -18,26 +18,24 @@
 //  Tablet
 
 @media #{$tablet-widths} {
-  .page-header {
-    padding: 0 $tablet-indent;
-  }
   .page-header__logo {
     order: 1;
     align-self: center;
     width: 167px;
-    padding: 0;
+    padding: 0 0 0 $tablet-indent;
+
+    text-align: left;
 
     border: none;
   }
 }
-
 // Desktop
 
 @media #{$desktop-widths} {
-  .page-header {
-    padding: 0 $tablet-indent;
-  }
   .page-header__logo {
     order: 2;
+    padding: 0;
+    
+    text-align: center;
   }
 }
