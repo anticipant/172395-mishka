@@ -1,6 +1,17 @@
 .page-header {
-  outline: 1px dashed #000;
+  position: relative;
 
+  background-color: transparent;
+}
+.page-header__logo {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  text-align: center;
+  line-height: 0;
+
+  border-bottom: 1px solid #ececec;
+  border-top: 1px solid #ececec;
   background-color: #fff;
 }
 
@@ -8,15 +19,15 @@
 
 @media #{$tablet-widths} {
   .page-header {
-    @include clearfix();
-    @include tablet-indent();
-
-    position: relative;
+    padding: 0 $tablet-indent;
   }
   .page-header__logo {
-    float: left;
+    order: 1;
+    align-self: center;
+    width: 167px;
+    padding: 0;
 
-    line-height: 0;
+    border: none;
   }
 }
 
@@ -24,22 +35,9 @@
 
 @media #{$desktop-widths} {
   .page-header {
-    @include clearfix();
-    @include tablet-indent();
-
-    position: relative;
-
-    min-height: 89px;
+    padding: 0 $tablet-indent;
   }
   .page-header__logo {
-    float: none;
-    position: absolute;
-    left: 50%;
-
-    margin-left: -75px;
-    display: inline-block;
-
-    line-height: 0;
-    vertical-align: top;
+    order: 2;
   }
 }
