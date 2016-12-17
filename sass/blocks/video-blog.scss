@@ -55,10 +55,8 @@
 @media #{$tablet-widths} {
   .video-blog {
     position: relative;
-
-    padding: 0;
-    padding-top: 455px;
-    padding-bottom: 45px;
+    margin: 0 $tablet-indent;
+    padding: 455px 0 45px;
   }
   .video-blog__title {
     margin-left: 40px;

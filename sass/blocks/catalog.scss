@@ -1,5 +1,6 @@
 .catalog {
-  outline: 1px dashed #1bb353;
+  display: flex;
+  flex-direction: column;
 
   padding-bottom: 58px;
 }
@@ -21,13 +22,11 @@
 
 @media #{$tablet-widths} {
   .catalog {
-    @include tablet-indent();
+    margin-top: -48px;
+
   }
   .catalog__title {
     @include font ($tablet-h-font-size, $tablet-h-line-height);
-
-    margin-left: -50px;
-    margin-right: -50px;
     margin-bottom: 80px;
     padding-top: 100px;
 
@@ -38,9 +37,14 @@
 
 @media #{$desktop-widths} {
   .catalog {
-    @include tablet-indent();
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
   }
   .catalog__title {
+    width: 100%;
+
     @include font ($desktop-h-font-size, $desktop-h-line-height);
 
     padding-bottom: 90px;
