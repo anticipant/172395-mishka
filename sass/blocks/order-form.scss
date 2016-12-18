@@ -1,13 +1,10 @@
 .order-form {
   padding-bottom: 55px;
-//  display: flex;
-//  flex-direction: column;
-
 }
-.order-wrapper {
+.order-form__wrapper {
   display: flex;
   flex-wrap: wrap;
-  
+
 }
 .order-form__title {
   @include font ($h1-font-size, $lh-large);
@@ -29,8 +26,6 @@
   color: $text-color;
 }
 .order-form__item {
-  display: flex;
-  outline: 1px dashed #ff0000;
   position: relative;
 
   margin: 0;
@@ -40,16 +35,17 @@
 .order-form__required {
   @include font (14px, $lh-tiny);
 
+  padding: 0 $mobile-indent;
   margin: 0;
 
   color: $text-color;
 }
 .order-form__btn {
   @include font($fs-medium, $lh-tiny);
-
-  padding-top: 18px;
-  padding-bottom: 18px;
-  margin: $mobile-indent $mobile-indent 0;
+  width: 260px;
+  padding: 18px 10px;
+  margin: 31px auto 0;
+  box-sizing: border-box;
 
   font-weight: bold;
 }
@@ -58,7 +54,7 @@
 
 @media #{$tablet-widths} {
   .order-form {
-    padding: 0 0 $tablet-indent;
+    padding: 0 0 50px;
     margin-top: -48px;
   }
 
@@ -78,7 +74,6 @@
     position: relative;
 
     &--background-grey {
-
       background-color: #f1f1f1;
     }
   }
@@ -91,8 +86,8 @@
 
   }
   .order-form__btn {
-    display: inline-block;
-    width: 226px;
+    //    display: inline-block;
+    width: 230px;
     margin: 53px 0 0 $tablet-indent;
   }
 }
@@ -101,7 +96,6 @@
 
 @media #{$desktop-widths} {
   .order-form {
-    @include tablet-indent();
   }
 
   .order-form__title {
@@ -112,19 +106,10 @@
   .order-form__description {
     padding: 125px $desktop-small-indent 0;
   }
-  .order-form__item {
-    @include desktop-small-indent();
-
-    text-align: left;
-
-    &--background-grey {
-      @include desktop-big-indent();
-    }
-  }
   .order-form__required {
     padding-right: $desktop-small-indent;
   }
   .order-form__btn {
-    margin-left: $desktop-small-indent;
+    margin-left: $desktop-big-indent;
   }
 }

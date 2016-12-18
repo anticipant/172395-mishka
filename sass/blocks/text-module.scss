@@ -1,17 +1,41 @@
+.text-module {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 $mobile-indent;
+}
+.text-module__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 .text-module__title {
   @include font ($fs-medium, $lh-tiny);
 
+  margin: 0;
   padding-bottom: 30px;
 
   font-weight: bold;
   color: $order-form-legend-color;
   text-transform: uppercase;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 6px;
+    height: 1px;
+    width: 198px;
+    background-color: $base-green;
+
+  }
 }
 .text-module__label {
   @include font ($fs-medium, $lh-small);
 
   display: block;
-  padding-bottom: 5px;
+  padding-top: 5px;
 
   color: $order-form-text-color-1;
   font-weight: bold;
@@ -19,49 +43,67 @@
 .text-module__input {
   @include font ($fs-medium, $lh-small);
 
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-bottom: 10px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+
+  border-bottom: 2px solid #f3f3f3;
 
   color: $order-form-text-color-2;
 
   border: none;
+  border-bottom: 2px solid #000;
 }
 
 //  Tablet
 
 @media #{$tablet-widths} {
+  .text-module {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding: 65px $tablet-indent 50px;
+  }
+  .text-module__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+  }
   .text-module__title {
-    position: absolute;
-    left: 0;
-    top: 67px;
+    width: 167px;
+    padding: 10px 0 0;
+
+    &:after {
+      display: none;
+    }
   }
   .text-module__input {
-    display: inline-block;
+    flex-grow: 1;
     width: 350px;
-    margin: 0;
+    margin: 0 0 30px;
 
     font-size: 19px;
-    vertical-align: top;
   }
   .text-module__label {
-    display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
+    padding: 10px 20px 10px 0;
 
     font-size: 19px;
-    vertical-align: top;
   }
 }
 
 // Desktop
 
 @media #{$desktop-widths} {
+  .text-module {
+    padding-right: $desktop-small-indent;
+  }
   .text-module__title {
-    left: 60px;
+    width: 175px;
+    text-align: center;
+  }
+  .text-module__wrapper {
+    width: 700px;
   }
   .text-module__input {
-    width: 570px;
+    width: 80%;
   }
 }

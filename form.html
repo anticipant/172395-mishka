@@ -33,56 +33,73 @@
       <p class="order-form__description">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
-      <form action="/" method="post" class="order-wrapper">
+      <form action="/" method="post" class="order-form__wrapper">
         <!--       action адрес программы или документа, который обрабатывает данные формы-->
-        <fieldset  class="order-form__item radio-module">
-          <legend class="radio-module__title">Тип</legend>
-          <input class="radio-module__input" type="radio" name="item-type" value="interior-accessories" id="interior-accessories" checked>
-          <label class="radio-module__label" for="interior-accessories">Аксессуар для интерьера</label>
-          <input class="radio-module__input" type="radio" name="item-type" value="childrens-toy" id="childrens-toy">
-          <label class="radio-module__label" for="childrens-toy">Детская игрушка</label>
-        </fieldset >
-        <fieldset class="order-form__item order-form__item--background-grey checkbox-module">
-          <legend class="checkbox-module__title">Цвет</legend>
-          <input class="checkbox-module__input" type="checkbox" name="item-color" id="white-color" checked>
-          <label class="checkbox-module__label" for="white-color">Белый</label>
-
-          <input class="checkbox-module__input" type="checkbox" name="item-color" id="grey-color" checked>
-          <label class="checkbox-module__label" for="grey-color">Серый</label>
-
-          <input class="checkbox-module__input" type="checkbox" name="item-color" id="tiffani-color">
-          <label class="checkbox-module__label" for="tiffani-color">«Тиффани»</label>
-
-          <input class="checkbox-module__input" type="checkbox" name="item-color" id="black-color">
-          <label class="checkbox-module__label" for="black-color">Черный</label>
-
-          <input class="checkbox-module__input" type="checkbox" name="item-color" id="pink-color">
-          <label class="checkbox-module__label" for="pink-color">Розовый</label>
-
-          <input class="checkbox-module__input" type="checkbox" name="item-color" id="orange-color">
-          <label class="checkbox-module__label" for="orange-color">Оранжевый</label>
-        </fieldset>
-        <fieldset class="order-form__item text-module">
-          <legend class="text-module__title">Фио</legend>
-          <label class="text-module__label" for="input-first-name">Имя:</label>
-          <input class="text-module__input" type="text" name="first-name" id="input-first-name" placeholder="Введите ваше имя*" required>
-          <label class="text-module__label" for="input-second-name">Фамилия:</label>
-          <input class="text-module__input" type="text" name="second-name" id="input-second-name" placeholder="Укажите фамилию*" required>
-          <label class="text-module__label" for="input-third-name">Отчество:</label>
-          <input class="text-module__input" type="text" name="third-name" id="input-third-name" placeholder="Отчество, если желаете">
-        </fieldset>
-        <fieldset class="order-form__item order-form__item--background-grey tel-module">
-          <legend class="tel-module__title">Тел</legend>
+        <div class="order-form__item radio-module">
+          <p class="radio-module__title">Тип</p>
+          <div class="radio-module__wrapper">
+            <div class="radio-module__inner">
+              <input class="radio-module__input" type="radio" name="item-type" value="interior-accessories" id="interior-accessories" checked>
+              <label class="radio-module__label" for="interior-accessories">Аксессуар для интерьера</label>
+            </div>
+            <div class="radio-module__inner">
+              <input class="radio-module__input" type="radio" name="item-type" value="childrens-toy" id="childrens-toy">
+              <label class="radio-module__label" for="childrens-toy">Детская игрушка</label>
+            </div>
+          </div>
+        </div >
+        <div class="order-form__item order-form__item--background-grey checkbox-module">
+          <p class="checkbox-module__title">Цвет</p>
+          <div class="checkbox-module__wrapper">
+            <div class="checkbox-module__inner">
+              <input class="checkbox-module__input" type="checkbox" name="item-color" id="white-color" checked>
+              <label class="checkbox-module__label" for="white-color">Белый</label>
+            </div>
+            <div class="checkbox-module__inner">
+              <input class="checkbox-module__input" type="checkbox" name="item-color" id="grey-color" checked>
+              <label class="checkbox-module__label" for="grey-color">Серый</label>
+            </div>
+            <div class="checkbox-module__inner">
+              <input class="checkbox-module__input" type="checkbox" name="item-color" id="tiffani-color">
+              <label class="checkbox-module__label" for="tiffani-color">«Тиффани»</label>
+            </div>
+            <div class="checkbox-module__inner">
+              <input class="checkbox-module__input" type="checkbox" name="item-color" id="black-color">
+              <label class="checkbox-module__label" for="black-color">Черный</label>
+            </div>
+            <div class="checkbox-module__inner">
+              <input class="checkbox-module__input" type="checkbox" name="item-color" id="pink-color">
+              <label class="checkbox-module__label" for="pink-color">Розовый</label>
+            </div>
+            <div class="checkbox-module__inner">
+              <input class="checkbox-module__input" type="checkbox" name="item-color" id="orange-color">
+              <label class="checkbox-module__label" for="orange-color">Оранжевый</label>
+            </div>
+          </div>
+        </div>
+        <div class="order-form__item text-module">
+          <p class="text-module__title">Фио</p>
+          <div class="text-module__wrapper">
+            <label class="text-module__label" for="input-first-name">Имя:</label>
+            <input class="text-module__input" type="text" name="first-name" id="input-first-name" placeholder="Введите ваше имя*" required>
+            <label class="text-module__label" for="input-second-name">Фамилия:</label>
+            <input class="text-module__input" type="text" name="second-name" id="input-second-name" placeholder="Укажите фамилию*" required>
+            <label class="text-module__label" for="input-third-name">Отчество:</label>
+            <input class="text-module__input" type="text" name="third-name" id="input-third-name" placeholder="Отчество, если желаете">
+          </div>
+        </div>
+        <div class="order-form__item order-form__item--background-grey tel-module">
+          <p class="tel-module__title">Тел</p>
           <input class="tel-module__input" type="tel" name="telephone" id="input-tel" placeholder="+7 ХХХ ХХ ХХ*" required>
-        </fieldset>
-        <fieldset class="order-form__item order-form__item--background-grey mail-module">
-          <legend class="mail-module__title">E-mail</legend>
+        </div>
+        <div class="order-form__item order-form__item--background-grey mail-module">
+          <p class="mail-module__title">E-mail</p>
           <input class="mail-module__input" type="email" name="email" id="input-email" placeholder="Ваш Email*" required>
-        </fieldset>
-        <fieldset class="order-form__item textarea-module">
-          <legend class="textarea-module__title">Доп</legend>
+        </div>
+        <div class="order-form__item textarea-module">
+          <p class="textarea-module__title">Доп</p>
           <textarea class="textarea-module__field" name="comments" id="comments" cols="21" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </fieldset>
+        </div>
         <p class="order-form__required">*Поля обязательны для заполнения</p>
         <input class="order-form__btn btn" type="submit" value="Отправить заказ" name="send">
       </form>
