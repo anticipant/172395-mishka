@@ -1,9 +1,5 @@
 .reviews {
-  outline: 1px dashed #000;
-
-  @include mobile-indent();
-  padding-top: 55px;
-  padding-bottom: 44px;
+  padding: 55px $mobile-indent 44px;
 
   font-size: 0;
 }
@@ -18,6 +14,7 @@
   @include font ($fs-small, $lh-large);
 
   margin: 0;
+  padding-bottom: 20px;
 
   color: $reviews-text-color;
 }
@@ -58,22 +55,19 @@
   border: 1px solid #ececec;
 }
 .reviews__write {
-  padding-top: 17px;
-  padding-bottom: 17px;
+  display: block;
+  padding: 17px 10px;
   margin-top: 38px;
+  box-sizing: border-box;
 }
 
 //  Tablet
 
 @media #{$tablet-widths} {
   .reviews {
-    @include tablet-indent();
-
     position: relative;
 
-    min-height: 530px;
-    padding: 0;
-
+    padding: 0 $tablet-indent 70px;
 
     background-image: url(../img/review@1x.jpg);
     background-repeat: no-repeat;
@@ -81,10 +75,14 @@
   .reviews__title {
     @include font($tablet-h-font-size, $tablet-h-line-height);
 
-    padding: 0;
-    padding-top: 85px;
-    padding-bottom: 40px;
+    padding: 85px 0 40px;
+  }
+  .reviews__wrapper {
+    padding: 20px 0 40px;
 
+    p {
+      margin: 0;
+    }
   }
   .reviews__item {
     padding: 0;
@@ -113,7 +111,7 @@
     right: 50px;
     top: 79px;
 
-    width: 170px;
+    width: 175px;
     margin: 0;
   }
 }
@@ -125,7 +123,7 @@
     padding-left: $desktop-big-indent;
   }
   .reviews__item {
-    padding-right: 110px;
+    padding-right: 100px;
   }
   .reviews__title {
     @include font($desktop-h-font-size, $desktop-h-line-height);

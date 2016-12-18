@@ -23,6 +23,7 @@
 @media #{$tablet-widths} {
   .catalog {
     margin-top: -48px;
+    padding-bottom: 63px;
 
   }
   .catalog__title {
@@ -40,6 +41,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    padding-bottom: 105px;
 
   }
   .catalog__title {

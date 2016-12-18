@@ -1,19 +1,16 @@
 .about-us {
-  outline: 1px dashed #000;
-
   padding-top: 30px;
 }
 .about-us__title {
-  @include mobile-indent();
   @include font($lh-large, $lh-large);
 
+  padding: 0 $mobile-indent;
   margin: 0;
 
   font-weight: bold;
 }
 .about-us__items {
-  @include mobile-indent();
-
+  padding: 0 $mobile-indent;
   margin: 0;
 
   list-style: none;
@@ -67,10 +64,8 @@
 @media #{$tablet-widths} {
   .about-us {
     @include clearfix();
-    @include tablet-indent();
 
-    padding-top: 57px;
-    padding-bottom: 70px;
+    padding: 57px $tablet-indent 70px;
 
     font-size: 0;
   }
@@ -103,10 +98,7 @@
 
 @media #{$desktop-widths} {
   .about-us {
-    @include desktop-big-indent();
-
-    padding-top: 67px;
-    padding-bottom: 80px;
+    padding: 67px $desktop-big-indent 80px;
   }
   .about-us__title {
     @include font($desktop-h-font-size, $desktop-h-line-height);
