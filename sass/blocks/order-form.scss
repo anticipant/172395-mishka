@@ -9,7 +9,7 @@
 .order-form__title {
   @include font ($h1-font-size, $lh-large);
   margin: 0;
-  padding: 75px 0;
+  padding: 70px 0 76px;
 
   color: $h1-color;
   font-weight: bold;
@@ -21,7 +21,7 @@
   @include font ($fs-tiny, $lh-medium);
 
   margin: 0;
-  padding: 30px $mobile-indent 28px;
+  padding: 22px $mobile-indent 26px;
 
   color: $text-color;
 }
@@ -43,8 +43,8 @@
 .order-form__btn {
   @include font($fs-medium, $lh-tiny);
   width: 260px;
-  padding: 18px 10px;
-  margin: 31px auto 0;
+  padding: 17px 14px 15px;
+  margin: 28px auto 0;
   box-sizing: border-box;
 
   font-weight: bold;
@@ -55,14 +55,14 @@
 @media #{$tablet-widths} {
   .order-form {
     padding: 0 0 50px;
-    margin-top: -48px;
+//    margin-top: -40px;
   }
 
   .order-form__title {
     @include font($tablet-h-font-size, $tablet-h-line-height);
 
     margin: 0;
-    padding-top: 100px;
+    padding: 53px 0 75px;
   }
   .order-form__description {
     @include font($fs-medium, $lh-large);
@@ -89,6 +89,7 @@
     //    display: inline-block;
     width: 230px;
     margin: 53px 0 0 $tablet-indent;
+    padding: 17px 14px 15px;
   }
 }
 

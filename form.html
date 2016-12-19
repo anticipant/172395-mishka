@@ -13,16 +13,16 @@
           <a href="index.html"><img src="http://placehold.it/90x45" alt="Mishka store"></a>
         </div>
         <button class="main-nav__toggle" type="button"></button>
-        <ul class="main-nav__items">
+        <ul class="main-nav__items main-nav__items-assortment">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link">Вязание на заказ</a></li>
         </ul>
-        <ul class="main-nav__items">
+        <ul class="main-nav__items main-nav__items-news">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Новые поступления</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Распродажа</a></li>
         </ul>
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
+        <ul class="main-nav__items main-nav__items-user">
+          <li class="main-nav__item main-nav__item--border"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a></li>
         </ul>
         <p class="main-nav__description">Бесплатная доставка по России</p>
@@ -80,12 +80,18 @@
         <div class="order-form__item text-module">
           <p class="text-module__title">Фио</p>
           <div class="text-module__wrapper">
-            <label class="text-module__label" for="input-first-name">Имя:</label>
-            <input class="text-module__input" type="text" name="first-name" id="input-first-name" placeholder="Введите ваше имя*" required>
-            <label class="text-module__label" for="input-second-name">Фамилия:</label>
-            <input class="text-module__input" type="text" name="second-name" id="input-second-name" placeholder="Укажите фамилию*" required>
-            <label class="text-module__label" for="input-third-name">Отчество:</label>
-            <input class="text-module__input" type="text" name="third-name" id="input-third-name" placeholder="Отчество, если желаете">
+            <div class="text-module__form-inline">
+              <label class="text-module__label" for="input-first-name">Имя:</label>
+              <input class="text-module__input" type="text" name="first-name" id="input-first-name" placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="text-module__form-inline">
+              <label class="text-module__label" for="input-second-name">Фамилия:</label>
+              <input class="text-module__input" type="text" name="second-name" id="input-second-name" placeholder="Укажите фамилию*" required>
+            </div>
+            <div class="text-module__form-inline">
+              <label class="text-module__label" for="input-third-name">Отчество:</label>
+              <input class="text-module__input" type="text" name="third-name" id="input-third-name" placeholder="Отчество, если желаете">
+            </div>
           </div>
         </div>
         <div class="order-form__item order-form__item--background-grey tel-module">

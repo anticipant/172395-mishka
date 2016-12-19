@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 $mobile-indent;
+  padding: 0 $mobile-indent 12px;
 }
 .checkbox-module__wrapper {
   position: relative;
@@ -16,7 +16,7 @@
   @include font ($fs-medium, $lh-tiny);
 
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 23px;
 
   font-weight: bold;
   color: $order-form-legend-color;
@@ -41,7 +41,7 @@
 .checkbox-module__label {
   @include font ($fs-medium, $lh-small);
   display: block;
-  padding: 0 0 40px 63px;
+  padding: 12px 0 31px 63px;
   box-sizing: border-box;
 
   color: $order-form-text-color-1;
@@ -50,8 +50,8 @@
   &:after {
     content: "";
     position: absolute;
-    left: 0px;
-    top: -14px;
+    left: 0;
+    top: 0;
     display: block;
     width: 40px;
     height: 40px;
@@ -64,7 +64,7 @@
     content: "";
     position: absolute;
     left: 9px;
-    top: -3px;
+    top: 12px;
     display: block;
     width: 22px;
     height: 10px;
@@ -82,19 +82,20 @@
     flex-direction: row;
     justify-content: flex-start;
 
-    padding: 65px $tablet-indent 50px;
+    padding: 49px $tablet-indent 26px;
   }
   .checkbox-module__wrapper {
     width: 500px;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .checkbox-module__inner {
-    width: 250px;
+    width: 239px;
   }
   .checkbox-module__title {
     width: 167px;
-    padding: 0;
+    padding: 18px 0 0;
 
     &:after {
       display: none;
@@ -104,9 +105,26 @@
     display: none;
   }
   .checkbox-module__label {
-    padding: 0 0 40px 80px;
+    padding: 16px 0 42px 80px;
 
     font-size: 19px;
+
+    &:after {
+      left: 0;
+      top: 0;
+
+      width: 54px;
+      height: 52px;
+    }
+  }
+  .checkbox-module__input:checked+.checkbox-module__label {
+    &:before {
+      left: 13px;
+      top: 14px;
+      
+      width: 30px;
+      height: 16px;
+    }
   }
 }
 

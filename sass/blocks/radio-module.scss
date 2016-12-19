@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 $mobile-indent;
+  padding: 0 $mobile-indent 20px;
 }
 .radio-module__wrapper {
   position: relative;
@@ -15,7 +15,7 @@
   @include font ($fs-medium, $lh-tiny);
 
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 21px;
 
   font-weight: bold;
   color: $order-form-legend-color;
@@ -39,7 +39,7 @@
   @include font ($fs-medium, $lh-small);
   display: block;
 
-  padding: 0 0 35px 62px;
+  padding: 12px 0 18px 62px;
 
   color: $order-form-text-color-1;
   font-weight: bold;
@@ -48,7 +48,7 @@
     content: "";
     position: absolute;
     left: 0px;
-    top: -12px;
+    top: 0px;
 
     display: block;
     width: 40px;
@@ -65,7 +65,7 @@
     content: "";
     position: absolute;
     left: 12px;
-    top: 0;
+    top: 12px;
 
     display: block;
     height: 16px;
@@ -83,7 +83,7 @@
     flex-direction: row;
     justify-content: flex-start;
 
-    padding: 65px $tablet-indent 50px;
+    padding: 46px $tablet-indent 29px;
   }
   .radio-module__wrapper {
     flex-direction: row;
@@ -92,17 +92,34 @@
   }
   .radio-module__title {
     width: 167px;
-    padding: 0;
+    padding: 16px 0 0;
 
     &:after {
       display: none;
     }
   }
   .radio-module__label {
-    padding: 0 0 55px 80px;
+    padding: 16px 0 41px 80px;
     margin: 0;
 
     font-size: 19px;
+
+    &:before {
+      left: 0;
+      top: 0;
+
+      width: 52px;
+      height: 52px;
+    }
+  }
+  .radio-module__input:checked+.radio-module__label {
+    &:after {
+      left: 15px;
+      top: 15px;
+
+      height: 22px;
+      width: 22px;
+    }
   }
 }
 

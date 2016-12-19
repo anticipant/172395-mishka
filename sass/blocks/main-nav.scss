@@ -6,10 +6,9 @@
   margin: 0;
 
   font-size: 0;
-
-  &:nth-of-type(2) {
-    display: none;
-  }
+}
+.main-nav__items-news {
+  display: none;
 }
 .main-nav__item {
   padding-top: 29px;
@@ -63,69 +62,72 @@
   .main-nav {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
   }
   .main-nav__items {
     background-color: #fff;
+    display: flex;
+    align-items: center;
 
-    &:first-of-type {
-      order: 3;
-      display: flex;
-      width: 60%;
-      padding: 24px 0 0 $tablet-indent;
-      box-sizing: border-box;
+    border: none;
+  }
+  .main-nav__items-assortment {
+    order: 3;
+    display: flex;
+    width: 60%;
+    padding: 16px 0 0 $tablet-indent;
+    box-sizing: border-box;
 
-      border: none;
+    background-color: #f1f1f1;
+    border-top: 1px solid #e7e7e7;
 
-      background-color: transparent;
-      border-top: 1px solid #e7e7e7;
-
-      a {
-        display: inline-block;
-        width: 167px;
-        padding: 0;
-
-        font-size: $fs-small;
-      }
+    li {
+      width: 167px;
     }
-
-    &:nth-of-type(2) {
-      display: none;
-    }
-
-    &:last-of-type {
-      order: 2;
-
-      display: flex;
-      margin-left: auto;
-      padding: 0 $tablet-indent 0 0;
+    a {
+      font-size: $fs-small;
     }
   }
+  .main-nav__items-news {
+    display: none;
+  }
+  .main-nav__items-user {
+    order: 2;
+    width: 400px;
+    box-sizing: border-box;
+    margin-left: auto;
+    padding: 0 $tablet-indent 0 0;
+  }
+
   .main-nav__item {
     padding: 0;
     border: none;
+
+    &--border {
+      align-self: stretch; 
+      display: flex;
+
+      border-left: 1px solid $border-color; 
+      border-right: 1px solid $border-color;
+    }
 
   }
   .main-nav__toggle {
     display: none
   }
   .main-nav__link {
+    padding: 0;
 
     &--search {
-      display: inline-block;
-      padding: 34px 40px 31px;
-
-      vertical-align: top;
+      padding: 0 41px;
       font-size: 0;
-
       background-position: 50% 50%;
-      border-right: 1px solid $border-color;
-      border-left: 1px solid $border-color;
+
+
     }
 
     &--basket {
-      display: inline-block;
-      padding: 34px 0 31px 80px;
+      display: block;
+      padding: 31px 0 33px 83px;
 
       vertical-align: top;
 
@@ -139,12 +141,13 @@
     order: 4;
     width: 40%;
     margin: 0 0 0 auto;
-    padding: 24px $tablet-indent 0 0;
+    padding: 16px $tablet-indent 0 0;
     box-sizing: border-box;
 
     color: $text-color;
     text-align: right;
 
+    background-color: #f1f1f1;
     border-top: 1px solid #e7e7e7;
   }
 }
@@ -154,63 +157,52 @@
 @media #{$desktop-widths} {
   .main-nav {
     justify-content: space-between;
-
   }
-  .main-nav__items {
+  .main-nav__items-assortment {
+    order: 1;
+    padding: 0 0 0 $tablet-indent;
+    width: auto;
 
+    background-color: #fff;
+    border: none;
 
-    &:first-of-type {
-      order: 1;
-      padding: 0 0 0 $tablet-indent;
-      width: auto;
+    li:first-of-type {
+      align-self: stretch; 
+      display: flex;
+      width: 184px;
+      margin-right: 35px;
 
-      background-color: #fff;
-      border: none;
-
-      a {
-        font-size: $fs-medium;
-      }
+      border-right: 1px solid $border-color;
     }
-
-    &:nth-of-type(2) {
-      order: 4;
-      display: block;
-      width: 60%;
-      padding: 24px 0 0 $tablet-indent;
-      box-sizing: border-box;
-
-      background-color: transparent;
-      border-top: 1px solid #e7e7e7;
-
-      a {
-        padding: 0;
-        width: 175px;
-
-        font-size: $fs-small;
-      }
+    a {
+      align-self: center;
+      font-size: $fs-medium;
     }
-
-    &:last-of-type {
-      order: 3;
-      margin: 0;
-//      padding-right: 50px;
-    }
-
   }
-  .main-nav__item {
-    display: inline-block;
-    padding: 0;
+  .main-nav__items-news {
+    order: 4;
+    display: flex;
+    width: 60%;
+    padding: 24px 0 0 $tablet-indent;
+    box-sizing: border-box;
 
-    vertical-align: top;
+    background-color: #f1f1f1;
+    border-top: 1px solid #e7e7e7;
 
+    li {
+      width: 184px;
+      margin-right: 35px;
+    }
+    a {
+      font-size: $fs-small;
+    }
+  }
+  .main-nav__items-user {
+    order: 3;
+    margin: 0;
   }
   .main-nav__toggle {
     display: none
-  }
-  .main-nav__link {
-    display: inline-block;
-
-    vertical-align: top;
   }
   .main-nav__description {
     @include font($fs-small, $lh-medium);
