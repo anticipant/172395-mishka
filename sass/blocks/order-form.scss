@@ -55,14 +55,14 @@
 @media #{$tablet-widths} {
   .order-form {
     padding: 0 0 50px;
-//    margin-top: -40px;
+    margin-top: -41px;
   }
 
   .order-form__title {
     @include font($tablet-h-font-size, $tablet-h-line-height);
 
     margin: 0;
-    padding: 53px 0 75px;
+    padding: 94px 0 75px;
   }
   .order-form__description {
     @include font($fs-medium, $lh-large);

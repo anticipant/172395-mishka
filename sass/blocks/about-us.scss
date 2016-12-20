@@ -76,14 +76,8 @@
   }
   .about-us__items {
     padding: 0;
-
-    &:first-of-type {
-      float: left;
-    }
-
-    &:last-of-type {
-      float: right;
-    }
+    display: flex;
+    flex-wrap: wrap;
   }
   .about-us__item {
     width: 334px;
@@ -91,6 +85,30 @@
     box-sizing: border-box;
 
     font-size: 20px;
+
+    &--flower-icon {
+      order: 1;
+    }
+
+    &--tangle-icon {
+      order: 2;
+    }
+
+    &--photo-icon {
+      order: 3;
+    }
+
+    &--rocket-icon {
+      order: 4;
+    }
+
+    &--heart-icon {
+      order: 5;
+    }
+
+    &--gift-icon {
+      order: 6;
+    }
   }
 }
 

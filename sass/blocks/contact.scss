@@ -1,5 +1,5 @@
 .contact {
-  padding: 45px 0 0;
+  padding: 45px 0 39px;
   border-top: 2px solid #000;
 }
 .contact__title {
@@ -31,11 +31,20 @@
 
   color: $contact-text-color;
 }
+.contact__btn {
+  display: block;
+  width: 260px;
+  padding: 16px 10px;
+  margin: 39px auto 0;
+  box-sizing: border-box;
+}
 
 //  Tablet
 
 @media #{$tablet-widths} {
   .contact {
+    padding-bottom: 57px;
+
     background-image: url(../img/icon-flag.svg);
     background-repeat: no-repeat;
     background-position: 95% 50px;
@@ -78,6 +87,11 @@
 
     vertical-align: top;
   }
+  .contact__btn {
+    width: 230px;
+    margin-top: 55px;
+
+  }
 }
 
 // Desktop
@@ -86,9 +100,9 @@
   .contact {
     position: relative;
 
+    display: flex;
+    flex-direction: column;
     padding: 80px 50px 105px $desktop-big-indent;
-
-    vertical-align: top;
 
     background-position: 110px 130px;
   }
@@ -102,5 +116,12 @@
   .contact__info {
     width: 300px;
     padding: 0 0 140px;
+  }
+  .contact__btn {
+    display: block;
+    width: 226px;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }

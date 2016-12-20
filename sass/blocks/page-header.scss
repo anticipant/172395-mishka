@@ -20,7 +20,10 @@
 @media #{$tablet-widths} {
   .page-header__logo {
     order: 1;
-    align-self: center;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
     width: 167px;
     padding: 0 0 0 $tablet-indent;
 
@@ -35,7 +38,7 @@
   .page-header__logo {
     order: 2;
     padding: 0;
+    justify-content: center;
 
-    text-align: center;
   }
 }

@@ -13,16 +13,16 @@
           <img src="http://placehold.it/90x45" alt="Mishka store">
         </div>
         <button class="main-nav__toggle" type="button"></button>
-        <ul class="main-nav__items">
+        <ul class="main-nav__items main-nav__items-assortment">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
         </ul>
-        <ul class="main-nav__items">
+        <ul class="main-nav__items main-nav__items-news">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Новые поступления</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Распродажа</a></li>
         </ul>
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
+        <ul class="main-nav__items main-nav__items-user">
+          <li class="main-nav__item main-nav__item--border"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a></li>
         </ul>
         <p class="main-nav__description">Бесплатная доставка по России</p>
@@ -34,8 +34,10 @@
       <a href="" class="our-products__link">Детские игрушки</a>
     </section>
     <section class="special-product-card">
-      <h2 class="special-product-card__title">Вязаные корзинки</h2>
-      <p class="special-product-card__promo-title">Товар недели</p>
+      <div class="special-product-card__section-title">
+        <h2 class="special-product-card__title">Вязаные корзинки</h2>
+        <p class="special-product-card__promo-title">Товар недели</p>
+      </div>
       <p class="special-product-card__description">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
       </p>
@@ -65,8 +67,6 @@
         <li class="about-us__item about-us__item--flower-icon">Экологически чистые материалы</li>
         <li class="about-us__item about-us__item--photo-icon">Cкандинавский стиль по российской цене</li>
         <li class="about-us__item about-us__item--heart-icon">Увеличивает лайки на фотографиях</li>
-      </ul>
-      <ul class="about-us__items">
         <li class="about-us__item about-us__item--tangle-icon">Связано вручную с любовью и умилением</li>
         <li class="about-us__item about-us__item--rocket-icon">Поддержка отечественного производителя</li>
         <li class="about-us__item about-us__item--gift-icon">Поставляется в подарочной упаковке</li>
@@ -106,8 +106,8 @@
         <div class="map__container">
           <!--              карту думаю реализовать через background и js-->
         </div>
-        <a href="#" class="map__btn btn">Напишите нам</a>
       </div>
+      <a href="#" class="contact__btn btn">Напишите нам</a>
     </section>
     <footer class="page-footer">
       <div class="page-footer__logo">

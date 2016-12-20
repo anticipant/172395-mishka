@@ -77,7 +77,7 @@
     padding: 16px 0 0 $tablet-indent;
     box-sizing: border-box;
 
-    background-color: #f1f1f1;
+    background-color: transparent;
     border-top: 1px solid #e7e7e7;
 
     li {
@@ -147,7 +147,7 @@
     color: $text-color;
     text-align: right;
 
-    background-color: #f1f1f1;
+    background-color: transparent;
     border-top: 1px solid #e7e7e7;
   }
 }
@@ -183,10 +183,10 @@
     order: 4;
     display: flex;
     width: 60%;
-    padding: 24px 0 0 $tablet-indent;
+    padding: 16px 0 0 50px;
     box-sizing: border-box;
 
-    background-color: #f1f1f1;
+    background-color: transparent;
     border-top: 1px solid #e7e7e7;
 
     li {

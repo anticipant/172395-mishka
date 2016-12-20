@@ -1,5 +1,5 @@
 .map {
-  padding: 39px 0 39px;
+  padding: 39px 0 0;
 }
 .map__container {
   height: 457px;
@@ -10,27 +10,13 @@
   background-repeat: no-repeat no-repeat;
   background-position: 50% 50%, 0 0;
 }
-.map__btn {
-  display: block;
-  width: 260px;
-  padding: 16px 10px;
-  margin: 39px auto 0;
-  box-sizing: border-box;
-}
+
 
 //  Tablet
 
 @media #{$tablet-widths} {
-  .map {
-    padding-bottom: 57px;
-  }
   .map__container {
     background-color: #b5ad39;
-  }
-  .map__btn {
-    width: 230px;
-    margin-top: 55px;
-
   }
 }
 
@@ -42,23 +28,10 @@
     bottom: 105px;
     right: 50px;
 
-    display: inline-block;
     width: 525px;
     padding: 0;
-
-    vertical-align: top;
   }
   .map__container {
     background-color: #b5ad39;
-  }
-  .map__btn {
-    position: absolute;
-    left: -350px;
-    bottom: 0;
-
-    display: block;
-    width: 226px;
-    padding-top: 16px;
-    padding-bottom: 16px;
   }
 }

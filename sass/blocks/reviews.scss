@@ -67,6 +67,9 @@
   .reviews {
     position: relative;
 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0 $tablet-indent 70px;
 
     background-image: url(../img/review@1x.jpg);
@@ -75,9 +78,14 @@
   .reviews__title {
     @include font($tablet-h-font-size, $tablet-h-line-height);
 
-    padding: 85px 0 40px;
+    align-self: center;
+    padding: 40px 0 40px;
   }
   .reviews__wrapper {
+    position: relative;
+    
+    width: 100%;
+    order: 1;
     padding: 20px 0 40px;
 
     p {
@@ -93,12 +101,12 @@
   .reviews__author-name {
     display: block;
     padding-top: 40px;
+    margin-right: 167px;
   }
   .reviews__control {
     position: absolute;
-    right: 50px;
-
-    margin-top: -50px;
+    right: 0;
+    bottom: 40px;
   }
   .reviews__prev,
   .reviews__next {
@@ -107,10 +115,7 @@
     border: none;
   }
   .reviews__write {
-    position: absolute;
-    right: 50px;
-    top: 79px;
-
+    align-self: center;
     width: 175px;
     margin: 0;
   }
