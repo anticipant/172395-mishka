@@ -101,9 +101,11 @@
     width: 100%;
     position: relative;
 
-
-    //    align-items: flex-end;
     padding: 0;
+  }
+  .video-blog__icon {
+    top: 51%;
+    left: 51%;
   }
   .video-blog__title {
     display: inline-block;

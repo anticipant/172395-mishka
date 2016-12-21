@@ -1,11 +1,11 @@
 .contact {
-  padding: 45px 0 39px;
+  padding: 39px 0 39px;
   border-top: 2px solid #000;
 }
 .contact__title {
   @include font ($fs-large, $lh-large);
 
-  padding: 0 $mobile-indent;
+  padding: 0 $mobile-indent 22px;
   margin: 0;
 
   font-weight: bold;
@@ -15,7 +15,6 @@
 
   padding: 0 $mobile-indent;
   margin: 0;
-
 }
 .contact__field {
   @include font ($fs-small, $lh-large);
@@ -23,13 +22,34 @@
   width: 70px;
   margin: 0;
 
+  vertical-align: top;
+
+
   color: $contact-text-color;
+
+  &--adress {
+    padding-top: 27px;
+  }
 }
 .contact__value {
   @include font ($fs-small, $lh-large);
+
   margin: 0;
+  padding-right: 20px;
 
   color: $contact-text-color;
+  vertical-align: top;
+  &--adress {
+    padding-top: 27px;
+  }
+  &--email {
+    padding-right: 0;
+    a {
+      color: #000;
+      text-decoration: none;
+
+    }
+  }
 }
 .contact__btn {
   display: block;
@@ -43,16 +63,17 @@
 
 @media #{$tablet-widths} {
   .contact {
+    padding-top: 69px;
     padding-bottom: 57px;
 
     background-image: url(../img/icon-flag.svg);
     background-repeat: no-repeat;
-    background-position: 95% 50px;
+    background-position: 93% 53px;
   }
   .contact__title {
     @include font($tablet-h-font-size, $tablet-h-line-height);
 
-    padding: 0 $tablet-indent 60px;
+    padding: 0 $tablet-indent 48px;
   }
   .contact__info {
     display: block;
@@ -72,7 +93,7 @@
   .contact__field {
     @include font($fs-medium, $lh-large);
 
-    width: 70px;
+    width: 77px;
     padding: 0;
     display: inline-block;
 
@@ -102,20 +123,20 @@
 
     display: flex;
     flex-direction: column;
-    padding: 80px 50px 105px $desktop-big-indent;
+    padding: 60px 50px 105px $desktop-big-indent;
 
-    background-position: 110px 130px;
+    background-position: 113px 138px;
   }
   .contact__title {
     @include font($desktop-h-font-size, $desktop-h-line-height);
 
     width: 300px;
-    padding: 90px 0 60px;
+    padding: 86px 0 40px;
 
   }
   .contact__info {
     width: 300px;
-    padding: 0 0 140px;
+    padding: 10px 0 79px;
   }
   .contact__btn {
     display: block;
@@ -123,5 +144,15 @@
     margin: 0;
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+  .contact__field {
+    &--adress {
+      padding-top: 29px;
+    }
+  }
+  .contact__value {
+    &--adress {
+      padding-top: 29px;
+    }
   }
 }

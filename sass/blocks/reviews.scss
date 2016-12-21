@@ -4,7 +4,7 @@
   font-size: 0;
 }
 .reviews__title {
-  @include font ($lh-large, $lh-large);
+  @include font ($fs-huge, $lh-large);
 
   margin: 0;
 
@@ -14,14 +14,18 @@
   @include font ($fs-small, $lh-large);
 
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 29px;
 
   color: $reviews-text-color;
+  p {
+    margin: 24px 0;
+  }
 }
 .reviews__author-name {
   @include font ($fs-large, $lh-medium);
 
   font-weight: bold;
+  font-style: normal;
   color: #000;
 }
 .reviews__author-link {
@@ -43,7 +47,7 @@
 }
 .reviews__next {
   height: 50px;
-  width: 128px;
+  width: 130px;
   padding: 0;
 
   font-size: 0;
@@ -70,7 +74,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 $tablet-indent 70px;
+    padding: 40px $tablet-indent 85px;
 
     background-image: url(../img/review@1x.jpg);
     background-repeat: no-repeat;
@@ -86,7 +90,7 @@
 
     width: 100%;
     order: 1;
-    padding: 20px 0 40px;
+    padding: 6px 0 40px;
 
     p {
       margin: 0;
@@ -100,12 +104,14 @@
   }
   .reviews__author-name {
     display: block;
-    padding-top: 40px;
+    padding-top: 10px;
     margin-right: 167px;
+    margin-top: 47px;
+
   }
   .reviews__control {
     position: absolute;
-    right: 0;
+    right: 7px;
     bottom: 40px;
   }
   .reviews__prev,
@@ -125,12 +131,19 @@
 
 @media #{$desktop-widths} {
   .reviews {
-    padding-left: $desktop-big-indent;
+    padding: 31px 50px 140px $desktop-small-indent;
+    margin-left: 50px;
   }
   .reviews__item {
     padding-right: 100px;
   }
   .reviews__title {
     @include font($desktop-h-font-size, $desktop-h-line-height);
+  }
+  .reviews__wrapper {
+    padding-top: 8px;
+  }
+  .reviews__author-name {
+    margin-top: 28px;
   }
 }

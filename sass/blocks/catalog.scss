@@ -22,14 +22,13 @@
 
 @media #{$tablet-widths} {
   .catalog {
-    margin-top: -48px;
     padding-bottom: 63px;
 
   }
   .catalog__title {
     @include font ($tablet-h-font-size, $tablet-h-line-height);
     margin-bottom: 83px;
-    padding-top: 103px;
+    padding-top: 55px;
 
   }
 }
@@ -49,7 +48,7 @@
     @include font ($desktop-h-font-size, $desktop-h-line-height);
 
     width: 100%;
-    padding: 102px 0 90px;
+    padding: 53px 0 90px;
     margin-bottom: 141px;
 
   }

@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--no-js page-header--background-image">
       <nav class="main-nav">
         <div class="page-header__logo">
           <img src="http://placehold.it/90x45" alt="Mishka store">
         </div>
         <button class="main-nav__toggle" type="button"></button>
-        <ul class="main-nav__items main-nav__items-assortment">
+        <ul class="main-nav__items main-nav__items-assortment  main-nav__items-assortment--background-transparent">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
         </ul>
-        <ul class="main-nav__items main-nav__items-news">
+        <ul class="main-nav__items main-nav__items-news  main-nav__items-news--background-transparent">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Новые поступления</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Распродажа</a></li>
         </ul>
@@ -25,14 +25,14 @@
           <li class="main-nav__item main-nav__item--border"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a></li>
         </ul>
-        <p class="main-nav__description">Бесплатная доставка по России</p>
+        <p class="main-nav__description main-nav__description--background-transparent">Бесплатная доставка по России</p>
       </nav>
+      <section class="our-products">
+        <h1 class="our-products__slogan">Милые штуки ручной работы для дома</h2>
+        <a href="" class="our-products__link">Предметы интерьера</a>
+        <a href="" class="our-products__link">Детские игрушки</a>
+      </section>
     </header>
-    <section class="our-products">
-      <h1 class="our-products__slogan">Милые штуки ручной работы для дома</h2>
-      <a href="" class="our-products__link">Предметы интерьера</a>
-      <a href="" class="our-products__link">Детские игрушки</a>
-    </section>
     <section class="special-product-card">
       <div class="special-product-card__section-title">
         <h2 class="special-product-card__title">Вязаные корзинки</h2>
@@ -93,13 +93,13 @@
       <table class="contact__info">
         <tr>
           <td class="contact__field">e-mail:</td>
-          <td class="contact__value">
+          <td class="contact__value contact__value--email">
             <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </td>
         </tr>
         <tr>
-          <td class="contact__field">адрес:</td>
-          <td class="contact__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          <td class="contact__field contact__field--adress">адрес:</td>
+          <td class="contact__value contact__value--adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
         </tr>
       </table>
       <div class="map">

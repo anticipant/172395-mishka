@@ -75,10 +75,16 @@
 
 @media #{$desktop-widths} {
   .mail-module {
-    padding-right: $desktop-small-indent;
+    padding-right: $desktop-big-indent;
   }
   .mail-module__title {
     width: 175px;
+    padding: 16px 0 0 6px;
+    box-sizing: border-box;
+
     text-align: center;
+  }
+  .mail-module__input {
+    background-position: 99% 6px;
   }
 }

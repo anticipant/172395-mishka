@@ -55,14 +55,13 @@
 @media #{$tablet-widths} {
   .order-form {
     padding: 0 0 50px;
-    margin-top: -41px;
   }
 
   .order-form__title {
     @include font($tablet-h-font-size, $tablet-h-line-height);
 
     margin: 0;
-    padding: 94px 0 75px;
+    padding: 53px 0 75px;
   }
   .order-form__description {
     @include font($fs-medium, $lh-large);
@@ -102,15 +101,16 @@
   .order-form__title {
     @include font($desktop-h-font-size, $desktop-h-line-height);
 
-    padding: 102px 0 96px;
+    padding: 53px 0 96px;
   }
   .order-form__description {
-    padding: 125px $desktop-small-indent 0;
+    padding: 129px $desktop-big-indent 0;
   }
   .order-form__required {
-    padding-right: $desktop-small-indent;
+    padding-right: $desktop-big-indent;
   }
   .order-form__btn {
     margin-left: $desktop-big-indent;
+    margin-top: 49px;
   }
 }

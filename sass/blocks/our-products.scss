@@ -1,16 +1,10 @@
 .our-products {
   font-size: 0;
-
-
-  background-image: url(../img/hero-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-
 }
 .our-products__slogan {
   @include font($h1-font-size, $lh-large);
 
-  padding: 75px $mobile-indent 120px;
+  padding: 70px $mobile-indent 122px;
   margin: 0;
 
   color: $h1-color;
@@ -21,7 +15,7 @@
   @include font(19px, $lh-medium);
 
   display: inline-block;
-  padding: 30px 160px 30px $mobile-indent;
+  padding: 26px 160px 29px $mobile-indent;
 
   font-weight: bold;
   color: #fff;
@@ -31,7 +25,7 @@
   background-color: #63d1bb;
   background-image: url(../img/icon-interior.svg);
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: 87% 50%;
 
 }
 .our-products__link:nth-of-type(2) {
@@ -48,18 +42,16 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 $tablet-indent;
-    margin-top: -40px;
-
-    background-size: cover;
   }
   .our-products__slogan {
     @include font($tablet-h-font-size, $tablet-h-line-height);
 
-    padding: 160px 0 370px;
+    padding: 114px 0 372px;
     margin: 0 80px;
   }
   .our-products__link {
     width: 50%;
+    padding: 29px 160px 30px 36px;
     box-sizing: border-box;
 
     @include font(20px, $lh-large);
@@ -72,6 +64,7 @@
   .our-products__slogan {
     @include font($desktop-h-font-size, $desktop-h-line-height);
 
+    padding-bottom: 358px;
     margin: 0 $desktop-small-indent;
   }
   .our-products__link {

@@ -76,10 +76,16 @@
 
 @media #{$desktop-widths} {
   .tel-module {
-    padding-right: $desktop-small-indent;
+    padding-right: $desktop-big-indent;
   }
   .tel-module__title {
     width: 175px;
+    padding: 14px 19px 0 0;
+    box-sizing: border-box;
+
     text-align: center;
+  }
+  .tel-module__input {
+    background-position: 99% 6px;
   }
 }
