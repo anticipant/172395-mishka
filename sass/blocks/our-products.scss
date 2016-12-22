@@ -1,19 +1,10 @@
 .our-products {
-  outline: 1px dashed #000;
   font-size: 0;
-
-
-  background-image: url(../img/hero-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-
 }
 .our-products__slogan {
-  @include mobile-indent();
   @include font($h1-font-size, $lh-large);
 
-  padding-top: 75px;
-  padding-bottom: 120px;
+  padding: 70px $mobile-indent 122px;
   margin: 0;
 
   color: $h1-color;
@@ -24,10 +15,7 @@
   @include font(19px, $lh-medium);
 
   display: inline-block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: $mobile-indent;
-  padding-right: 160px;
+  padding: 26px 160px 29px $mobile-indent;
 
   font-weight: bold;
   color: #fff;
@@ -37,7 +25,7 @@
   background-color: #63d1bb;
   background-image: url(../img/icon-interior.svg);
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: 87% 50%;
 
 }
 .our-products__link:nth-of-type(2) {
@@ -51,24 +39,22 @@
 
 @media #{$tablet-widths} {
   .our-products {
-    @include tablet-indent();
-
-    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 $tablet-indent;
   }
   .our-products__slogan {
     @include font($tablet-h-font-size, $tablet-h-line-height);
 
-    padding: 0;
-    padding-top: 160px;
-    padding-bottom: 370px;
-    margin: 0;
-    margin-left: 80px;
-    margin-right: 80px;
-
+    padding: 114px 0 372px;
+    margin: 0 80px;
   }
   .our-products__link {
     width: 50%;
+    padding: 29px 160px 30px 36px;
     box-sizing: border-box;
+
+    @include font(20px, $lh-large);
   }
 }
 
@@ -78,12 +64,10 @@
   .our-products__slogan {
     @include font($desktop-h-font-size, $desktop-h-line-height);
 
-    margin-left: $desktop-small-indent;
-    margin-right: $desktop-small-indent;
+    padding-bottom: 358px;
+    margin: 0 $desktop-small-indent;
   }
   .our-products__link {
-    width: 50%;
     padding-right: 350px;
-    box-sizing: border-box;
   }
 }

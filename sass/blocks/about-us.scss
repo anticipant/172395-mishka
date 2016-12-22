@@ -1,19 +1,16 @@
 .about-us {
-  outline: 1px dashed #000;
-
-  padding-top: 30px;
+  padding-top: 32px;
 }
 .about-us__title {
-  @include mobile-indent();
-  @include font($lh-large, $lh-large);
+  @include font($fs-huge, $lh-large);
 
+  padding: 0 $mobile-indent;
   margin: 0;
 
   font-weight: bold;
 }
 .about-us__items {
-  @include mobile-indent();
-
+  padding: 0 $mobile-indent;
   margin: 0;
 
   list-style: none;
@@ -21,44 +18,62 @@
 .about-us__item {
   @include font($fs-medium, 20px);
 
-  padding-top: 85px;
+
 
   font-weight: bold;
 
   &--flower-icon {
+    padding-right: 65px;
+    padding-top: 87px;
+
     background-image: url(../img/icon-feature-1.svg);
     background-repeat: no-repeat;
-    background-position: 5px 30px;
+    background-position: 8px 33px;
   }
 
   &--tangle-icon {
+    padding-right: 10px;
+    padding-top: 82px;
+
     background-image: url(../img/icon-feature-2.svg);
     background-repeat: no-repeat;
-    background-position: 5px 30px;
+    background-position: 4px 31px;
   }
 
   &--photo-icon {
+    padding-right: 40px;
+    padding-top: 83px;
+
     background-image: url(../img/icon-feature-3.svg);
     background-repeat: no-repeat;
-    background-position: 5px 30px;
+    background-position: 0 30px;
   }
 
   &--rocket-icon {
+    padding-right: 10px;
+    padding-top: 83px;
+
     background-image: url(../img/icon-feature-4.svg);
     background-repeat: no-repeat;
-    background-position: 5px 30px;
+    background-position: 0px 33px;
   }
 
   &--heart-icon {
+    padding-right: 60px;
+    padding-top: 84px;
+
     background-image: url(../img/icon-feature-5.svg);
     background-repeat: no-repeat;
-    background-position: 5px 30px;
+    background-position: 8px 34px;
   }
 
   &--gift-icon {
+    padding-right: 10px;
+    padding-top: 83px;
+
     background-image: url(../img/icon-feature-6.svg);
     background-repeat: no-repeat;
-    background-position: 5px 30px;
+    background-position: 3px 32px;
   }
 }
 
@@ -67,35 +82,75 @@
 @media #{$tablet-widths} {
   .about-us {
     @include clearfix();
-    @include tablet-indent();
 
-    padding-top: 57px;
-    padding-bottom: 70px;
+    padding: 47px $tablet-indent 62px;
 
     font-size: 0;
   }
   .about-us__title {
     @include font($tablet-h-font-size, $tablet-h-line-height);
 
-    padding: 0;
+    padding: 10px 0 10px;
   }
   .about-us__items {
     padding: 0;
-
-    &:first-of-type {
-      float: left;
-    }
-
-    &:last-of-type {
-      float: right;
-    }
+    display: flex;
+    flex-wrap: wrap;
   }
   .about-us__item {
     width: 334px;
-    padding-right: 35px;
+
+    padding-top: 93px;
+    padding-bottom: 23px;
     box-sizing: border-box;
 
     font-size: 20px;
+
+    &--flower-icon {
+      order: 1;
+      padding-right: 110px;
+
+      background-position: 8px 39px;
+
+    }
+
+    &--tangle-icon {
+      order: 2;
+      padding-right: 35px;
+
+      background-position: 3px 42px;
+
+    }
+
+    &--photo-icon {
+      order: 3;
+      padding-right: 75px;
+
+      background-position: 0 39px;
+
+    }
+
+    &--rocket-icon {
+      order: 4;
+      padding-right: 35px;
+
+      background-position: 0px 42px;
+
+    }
+
+    &--heart-icon {
+      order: 5;
+      padding-right: 100px;
+
+      background-position: 8px 42px;
+    }
+
+    &--gift-icon {
+      order: 6;
+      padding-right: 55px;
+
+      background-position: 3px 39px;
+    }
   }
 }
 
@@ -103,12 +158,12 @@
 
 @media #{$desktop-widths} {
   .about-us {
-    @include desktop-big-indent();
-
-    padding-top: 67px;
-    padding-bottom: 80px;
+    padding: 59px $desktop-big-indent 69px;
   }
   .about-us__title {
     @include font($desktop-h-font-size, $desktop-h-line-height);
+  }
+  .about-us__item {
+    margin-right: 16px;
   }
 }

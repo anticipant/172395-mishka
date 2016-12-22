@@ -1,53 +1,58 @@
 .video-blog {
-  outline: 1px dashed #000;
-  @include mobile-indent();
+  padding: 0 0 32px;
+  margin: $mobile-indent $mobile-indent 0;
+
+  border: 1px solid $border-color;
 }
 .video-blog__title {
   @include font ($fs-medium, $lh-medium);
 
   margin: 0;
-  margin-top: 30px;
-  padding-left: 90px;
-  padding-bottom: 26px;
+  padding: 26px 10px 23px 90px;
 
   font-weight: bold;
 
   background-image: url(../img/icon-video.svg);
   background-repeat: no-repeat;
-  background-position: 30px 50%;
+  background-position: 32px 45%;
 }
 .video-blog__movie {
+  position: relative;
   height: 150px;
 
   background-image: url(../img/video-mobile@1x.jpg);
   background-repeat: no-repeat;
 }
 .video-blog__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
   width: 105px;
   height: 80px;
-  margin-left: 50%;
+
 
   background-image: url(../img/icon-play.svg);
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
 
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 .video-blog__description {
-  @include mobile-indent();
   @include font ($fs-tiny, $lh-medium);
 
+  padding: 26px 40px 25px 33px;
   margin: 0;
-  margin-top: 35px;
 
   color: $video-blog-text-color;
 }
 .video-blog__buy {
-  padding-top: 18px;
-  padding-bottom: 14px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  display: block;
+  width: 192px;
+  padding: 16px 20px 16px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 //  Tablet
@@ -56,33 +61,36 @@
   .video-blog {
     position: relative;
 
-    padding: 0;
-    padding-top: 455px;
-    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 $tablet-indent;
+    padding: 0 0 45px;
   }
   .video-blog__title {
-    margin-left: 40px;
+    padding: 37px 10px 23px 66px;
+    margin: 0 40px;
+
+    font-size: 20px;
+
+    background-position: 0px 62%;
 
   }
   .video-blog__description {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 43px;
+    @include font ($fs-small, $lh-large);
+    padding: 9px 40px 35px;
   }
   .video-blog__movie {
-    position: absolute;
-    top: 0;
-
+    order: -1;
     height: 455px;
-    width: 100%;
+    width: 668px;
 
     background-size: contain;
     background-color: rgba(110, 191, 216, 0.55);
   }
   .video-blog__buy {
-    display: block;
+
     margin: 0 auto;
-    width: 580px;
+    width: 584px;
   }
 }
 
@@ -90,47 +98,47 @@
 
 @media #{$desktop-widths} {
   .video-blog {
-    @include clearfix();
-
+    width: 100%;
     position: relative;
 
     padding: 0;
   }
+  .video-blog__icon {
+    top: 51%;
+    left: 51%;
+  }
   .video-blog__title {
     display: inline-block;
     width: 150px;
-    margin: 0;
-    margin-left: 80px;
-    padding: 0;
-    padding-top: 100px;
+    margin: 0 10px 0 760px;
+    padding: 100px 10px 20px 0;
 
     vertical-align: top;
 
-    background-position: 0 50%;
+    background-position: 0 45px;
   }
   .video-blog__description {
     display: inline-block;
     width: 250px;
-    padding: 0;
-    padding-top: 40px;
-    padding-bottom: 50px;
-    margin: 0;
-    margin-left: 80px;
+    padding: 11px 0 46px;
+    margin: 0 10px 0 760px;
 
     font-size: $fs-small;
     vertical-align: top;
   }
   .video-blog__movie {
-    position: static;
-    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     height: 455px;
     width: 682px;
   }
   .video-blog__buy {
     display: inline-block;
-    margin-left: 80px;
-    width: 226px;
+    margin-left: 760px;
+    margin-bottom: 58px;
+    width: 230px;
 
     vertical-align: top;
   }

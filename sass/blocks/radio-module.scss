@@ -1,46 +1,140 @@
+.radio-module {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 $mobile-indent 20px;
+}
+.radio-module__wrapper {
+  position: relative;
+}
+.radio-module__inner {
+  position: relative;
+}
+
 .radio-module__title {
   @include font ($fs-medium, $lh-tiny);
 
-  padding-bottom: 35px;
+  margin: 0;
+  padding-bottom: 21px;
 
   font-weight: bold;
   color: $order-form-legend-color;
   text-transform: uppercase;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 6px;
+    height: 1px;
+    width: 198px;
+    background-color: $base-green;
+  }
+}
+.radio-module__input {
+  display: none;
 }
 .radio-module__label {
   @include font ($fs-medium, $lh-small);
-
   display: block;
-  padding-bottom: 35px;
-  padding-left: 60px;
+
+  padding: 12px 0 18px 62px;
 
   color: $order-form-text-color-1;
   font-weight: bold;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    display: block;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: transparent;
+  }
+}
+.radio-module__input:checked+.radio-module__label {
+  &:after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 12px;
+
+    display: block;
+    height: 16px;
+    width: 16px;
+
+    border-radius: 50%;
+    background-color: $base-green;
+  }
 }
 
 //  Tablet
 
 @media #{$tablet-widths} {
-  .radio-module__title {
-    position: absolute;
-    left: 0;
-    top: 67px;
+  .radio-module {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding: 46px $tablet-indent 29px;
   }
-  .radio-module__input {
-    display: none;
+  .radio-module__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  .radio-module__title {
+    width: 167px;
+    padding: 16px 0 0;
+
+    &:after {
+      display: none;
+    }
   }
   .radio-module__label {
-    padding-top: 17px;
-    padding-left: 80px;
+    padding: 16px 0 41px 80px;
+    margin: 0;
 
     font-size: 19px;
+
+    &:before {
+      left: 0;
+      top: 0;
+
+      width: 52px;
+      height: 52px;
+    }
+  }
+  .radio-module__input:checked+.radio-module__label {
+    &:after {
+      left: 15px;
+      top: 15px;
+
+      height: 22px;
+      width: 22px;
+    }
   }
 }
 
 // Desktop
 
 @media #{$desktop-widths} {
+  .radio-module {
+    padding-top: 56px;
+  }
   .radio-module__title {
-    left: 60px;
+    width: 175px;
+    text-align: center;
+  }
+  .radio-module__title {
+    padding: 19px 11px 0 0;
+    box-sizing: border-box;
   }
 }

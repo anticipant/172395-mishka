@@ -1,6 +1,7 @@
 body {
   width: 320px;
   margin: 0 auto;
+  outline: 1px dashed #ff0000;
 }
 
 @media #{$tablet-widths} {

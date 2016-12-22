@@ -1,26 +1,44 @@
+.tel-module {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 $mobile-indent 23px;
+}
 .tel-module__title {
   @include font ($fs-medium, $lh-tiny);
 
-  padding-bottom: 19px;
-  padding-top: 25px;
+  padding-bottom: 8px;
+  margin: 0;
 
   font-weight: bold;
   color: $order-form-legend-color;
   text-transform: uppercase;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 6px;
+    height: 1px;
+    width: 198px;
+    background-color: $base-green;
+
+  }
 }
 .tel-module__input {
   @include font ($fs-medium, $lh-small);
 
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 15px 0;
   margin-bottom: 10px;
 
   color: $order-form-text-color-2;
 
   border: none;
+  border-bottom: 2px solid #000;
   background-image: url(../img/icon-phone.svg);
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: 96% 8px;
 }
 
 
@@ -28,21 +46,29 @@
 
 @media #{$tablet-widths} {
   .tel-module {
-    padding-bottom: 5px;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding: 54px $tablet-indent 6px;
   }
   .tel-module__title {
-    position: absolute;
-    left: 50px;
-    top: 67px;
+    width: 167px;
+    padding: 14px 0 0;
 
-    padding: 0;
+    &:after {
+      display: none;
+    }
   }
   .tel-module__input {
-    width: 500px;
+    flex-grow: 1;
+
+    padding: 7px 0px 13px 15px;
+    box-sizing: border-box;
 
     font-size: 19px;
 
     background-color: #f1f1f1;
+    background-position: 95% 6px;
   }
 }
 
@@ -50,12 +76,16 @@
 
 @media #{$desktop-widths} {
   .tel-module {
-    padding-right: $desktop-small-indent;
+    padding-right: $desktop-big-indent;
   }
   .tel-module__title {
-    left: 110px;
+    width: 175px;
+    padding: 14px 19px 0 0;
+    box-sizing: border-box;
+
+    text-align: center;
   }
   .tel-module__input {
-    width: 700px;
+    background-position: 99% 6px;
   }
 }

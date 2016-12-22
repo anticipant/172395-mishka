@@ -1,14 +1,15 @@
 .order-form {
-  outline: 1px dashed #000;
-
   padding-bottom: 55px;
+}
+.order-form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 .order-form__title {
   @include font ($h1-font-size, $lh-large);
-
   margin: 0;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding: 70px 0 76px;
 
   color: $h1-color;
   font-weight: bold;
@@ -17,38 +18,34 @@
   background-color: #f1f1f1;
 }
 .order-form__description {
-  @include mobile-indent();
   @include font ($fs-tiny, $lh-medium);
 
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 22px $mobile-indent 26px;
 
   color: $text-color;
 }
 .order-form__item {
-  outline: 1px dashed #ff0000;
-  @include mobile-indent();
+  position: relative;
 
   margin: 0;
 
   border: none;
 }
 .order-form__required {
-  @include mobile-indent();
   @include font (14px, $lh-tiny);
 
+  padding: 0 $mobile-indent;
   margin: 0;
 
   color: $text-color;
 }
 .order-form__btn {
-//  @include mobile-indent();
   @include font($fs-medium, $lh-tiny);
-
-  padding-top: 18px;
-  padding-bottom: 18px;
-  margin: $mobile-indent $mobile-indent 0;
+  width: 260px;
+  padding: 17px 14px 15px;
+  margin: 28px auto 0;
+  box-sizing: border-box;
 
   font-weight: bold;
 }
@@ -57,48 +54,41 @@
 
 @media #{$tablet-widths} {
   .order-form {
-    @include tablet-indent();
+    padding: 0 0 50px;
   }
 
   .order-form__title {
     @include font($tablet-h-font-size, $tablet-h-line-height);
 
-    margin-left: -50px;
-    margin-right: -50px;
-    padding-top: 100px;
+    margin: 0;
+    padding: 53px 0 75px;
   }
   .order-form__description {
     @include font($fs-medium, $lh-large);
 
-    padding: 0;
-    padding-top: 80px;
-    padding-bottom: 10px;
+    padding: 80px $tablet-indent 10px;
+
   }
   .order-form__item {
     position: relative;
 
-    padding: 50px 0 50px 167px;
-
-    text-align: left;
-
     &--background-grey {
-      margin-left: -50px;
-      margin-right: -50px;
-      padding-left: 217px;
-
       background-color: #f1f1f1;
     }
   }
   .order-form__required {
     @include font($fs-medium, $lh-large);
 
-    float: right;
+    order: 1;
+    margin-left: auto;
+    padding: 60px $tablet-indent 0 0;
 
-    padding-top: 60px;
   }
   .order-form__btn {
-    width: 226px;
-    margin: 53px 0 0;
+    //    display: inline-block;
+    width: 230px;
+    margin: 53px 0 0 $tablet-indent;
+    padding: 17px 14px 15px;
   }
 }
 
@@ -106,31 +96,21 @@
 
 @media #{$desktop-widths} {
   .order-form {
-    @include tablet-indent();
   }
 
   .order-form__title {
     @include font($desktop-h-font-size, $desktop-h-line-height);
 
-    padding-bottom: 90px;
+    padding: 53px 0 96px;
   }
   .order-form__description {
-    @include desktop-small-indent();
-    padding-top: 125px;
-  }
-  .order-form__item {
-    @include desktop-small-indent();
-
-    text-align: left;
-
-    &--background-grey {
-      @include desktop-big-indent();
-    }
+    padding: 129px $desktop-big-indent 0;
   }
   .order-form__required {
-    padding-right: $desktop-small-indent;
+    padding-right: $desktop-big-indent;
   }
   .order-form__btn {
-    margin-left: $desktop-small-indent;
+    margin-left: $desktop-big-indent;
+    margin-top: 49px;
   }
 }
