@@ -1,28 +1,10 @@
-.page-header__logo-tablet,
-.page-header__logo-desktop {
-  display: none;
-}
-.page-header__logo-mobile {
-  display: inline-block;
-  &:hover {
-    opacity: 0.6;
-  }
-  &:active {
-    opacity: 0.3;
-  }
-  &--hvr-disabled {
-    &:hover {
-      opacity: 1;
-    }
-    &:active {
-      opacity: 1;
-    }
-  }
-}
 .page-header {
   position: relative;
 
-  background-color: transparent;
+//  width: 320px;
+  margin: 0 auto;
+
+  background-color: #f9f9f9;
 
   &--background-image {
     background-image: url(../img/hero-mobile@1x.jpg);
@@ -44,6 +26,27 @@
   border-top: 1px solid #ececec;
   background-color: #fff;
 }
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+  display: none;
+}
+.page-header__logo-mobile {
+  display: inline-block;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &--hvr-disabled {
+    &:hover {
+      opacity: 1;
+    }
+    &:active {
+      opacity: 1;
+    }
+  }
+}
 @media (max-width: 767px) and (min-resolution: 144dpi),
   (max-width: 767px) and (min-resolution: 1.5dppx) {
     .page-header {
@@ -57,35 +60,15 @@
 //  Tablet
 
 @media #{$tablet-widths} {
-  .page-header__logo-mobile,
-  .page-header__logo-desktop {
-    display: none;
-  }
-  .page-header__logo-tablet {
-    display: block;
-    &:hover {
-      opacity: 0.6;
-    }
-    &:active {
-      opacity: 0.3;
-    }
-    &--hvr-disabled {
-      &:hover {
-        opacity: 1;
-      }
-      &:active {
-        opacity: 1;
-      }
-    }
-  }
 
   .page-header {
+//    width: 768px;
+
     background-color: transparent;
 
     &--background-image {
       background-image: url(../img/hero-desktop@1x.jpg);
       background-position: 50% 88px;
-      //      background-size: auto 745px;
     }
     &--no-js {
       background-position: 50% 88px;
@@ -104,6 +87,27 @@
 
     border: none;
   }
+  .page-header__logo-mobile,
+  .page-header__logo-desktop {
+    display: none;
+  }
+  .page-header__logo-tablet {
+    display: block;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+    &--hvr-disabled {
+      &:hover {
+        opacity: 1;
+      }
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
   @media (min-width: 768px) and (min-resolution: 144dpi),
     (min-width: 768px) and (min-resolution: 1.5dppx) {
       .page-header {
@@ -117,6 +121,14 @@
 // Desktop
 
 @media #{$desktop-widths} {
+  .page-header {
+    width: 1150px;
+  }
+  .page-header__logo {
+    order: 2;
+    padding: 0;
+    justify-content: center;
+  }
   .page-header__logo-mobile,
   .page-header__logo-tablet {
     display: none;
@@ -137,11 +149,5 @@
         opacity: 1;
       }
     }
-  }
-  .page-header__logo {
-    order: 2;
-    padding: 0;
-    justify-content: center;
-
   }
 }

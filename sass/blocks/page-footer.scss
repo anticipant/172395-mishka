@@ -47,12 +47,12 @@
 .page-footer__logo-htmlacademy {
   margin-left: 10px;
   fill: $base-green;
-  &:hover {
-    fill: $hover-green;
-  }
   &:active {
     fill: $hover-green;
   }
+}
+.page-footer__copyright-link:hover .page-footer__logo-htmlacademy {
+  fill: $hover-green;
 }
 
 //  Tablet

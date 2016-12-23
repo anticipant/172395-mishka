@@ -28,8 +28,8 @@
   text-decoration: none;
   color: #000;
 
-  &:hover:not(.main-nav__link--search):not(.main-nav__link--basket) {
-    opacity: 0.6
+  &:hover {
+    opacity: 0.6;
   }
 
   &:active {
@@ -53,22 +53,14 @@
 
 
 .main-nav__link--search:hover {
-  .help {
-    opacity: 0.6;
-    //    почему не срабатывает?
-  }
   .main-nav__icon-search {
+    opacity: 1;
     fill: $base-green;
   }
 }
 .main-nav__link--basket:hover {
-
-  .help {
-    opacity: 0.6;
-    //    почему не срабатывает?
-
-  }
   .main-nav__icon-cart {
+    opacity: 1;
     fill: $base-green;
   }
 }

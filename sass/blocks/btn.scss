@@ -13,4 +13,13 @@
 
   background-color: #fff;
   border: 2px solid $text-color;
+
+  &:hover {
+    color: #fff;
+
+    background-color: $text-color;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

@@ -34,6 +34,15 @@
 
   color: $order-form-text-color-2;
   border: 2px solid #000;
+
+  &:hover {
+    border-color: $base-green;
+  } 
+  &:focus {
+    border-color: $base-green;
+    color: $text-color;
+    outline: none;
+  }
 }
 
 //  Tablet

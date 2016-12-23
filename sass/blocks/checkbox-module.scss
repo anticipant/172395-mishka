@@ -58,6 +58,13 @@
     box-sizing: border-box;
     border: 2px solid #000;
   }
+  &:hover:after {
+    border-color: $base-green;
+  }
+  &:active:after {
+    border-color: $text-color;
+    opacity: 0.3;
+  }
 }
 .checkbox-module__input:checked+.checkbox-module__label {
   &:before {
