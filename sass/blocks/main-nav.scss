@@ -20,6 +20,7 @@
 }
 .main-nav__link {
   @include font($fs-medium);
+  position: relative;
 
   padding-left: 75px;
 
@@ -27,17 +28,55 @@
   text-decoration: none;
   color: #000;
 
-  &--search {
-    background-image: url(../img/icon-search.svg);
-    background-repeat: no-repeat;
-    background-position: 30px 50%;
+  &:hover:not(.main-nav__link--search):not(.main-nav__link--basket) {
+    opacity: 0.6
   }
-  &--basket {
-    background-image: url(../img/icon-cart.svg);
-    background-repeat: no-repeat;
-    background-position: 30px 50%;
+
+  &:active {
+    opacity: 0.3
   }
 }
+.main-nav__icon-search {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+.main-nav__icon-cart {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+
+.main-nav__link--search:hover {
+  .help {
+    opacity: 0.6;
+    //    почему не срабатывает?
+  }
+  .main-nav__icon-search {
+    fill: $base-green;
+  }
+}
+.main-nav__link--basket:hover {
+
+  .help {
+    opacity: 0.6;
+    //    почему не срабатывает?
+
+  }
+  .main-nav__icon-cart {
+    fill: $base-green;
+  }
+}
+.main-nav__link:active .main-nav__icon-search,
+.main-nav__link:active .main-nav__icon-cart {
+  fill: $base-green;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 30px;
@@ -122,21 +161,24 @@
     padding: 0;
 
     &--search {
-      padding: 0 41px;
+      padding: 0;
+      margin: 0 41px;
+
       font-size: 0;
-      background-position: 50% 50%;
-
-
     }
 
     &--basket {
       display: block;
-      padding: 31px 0 33px 83px;
-
-      vertical-align: top;
-
-      background-position: 30px 50%;
+      padding: 0 0 0 83px;
+      margin-top: 31px;
+      margin-bottom: 33px;
     }
+  }
+  .main-nav__icon-search {
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
   }
   .main-nav__description {
     @include font($fs-small, $lh-medium);

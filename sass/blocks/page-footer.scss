@@ -20,28 +20,40 @@
 .page-footer__copyright {
   @include font (19px, $lh-small);
 
+  display: flex;
+  justify-content: center;
   margin: 0;
-  padding-top: 25px;
 
   font-weight: bold;
 
   border-top: 1px solid #000;
 }
 .page-footer__copyright-link {
-  display: inline-block;
-  width: 33px;
-  height: 38px;
-  margin-top: -5px;
+  display: flex;
+  align-items: center;
+
+
   margin-left: 13px;
+  padding: 22px 0 5px;
 
-  font-size: 0;
-  vertical-align: top;
+  color: #000;
+  text-decoration: none;
 
-  background-image: url(../img/logo-htmlacademy.svg);
-  background-repeat: no-repeat;
-  background-position: 100% 0;
+  &:active {
+
+    opacity: 0.3;
+  }
 }
-
+.page-footer__logo-htmlacademy {
+  margin-left: 10px;
+  fill: $base-green;
+  &:hover {
+    fill: $hover-green;
+  }
+  &:active {
+    fill: $hover-green;
+  }
+}
 
 //  Tablet
 
@@ -56,6 +68,15 @@
   .page-footer__logo {
     display: block;
   }
+  .page-footer__logo-svg {
+    &:hover {
+      fill: $hover-green;
+    }
+    &:active {
+      fill: $hover-green;
+      opacity: 0.3;
+    }
+  }
   .page-footer__social {
     margin-left: 30px;
     display: flex;
@@ -67,7 +88,6 @@
     vertical-align: top;
   }
   .page-footer__copyright {
-    padding: 17px 0 0 0;
     border: none;
   }
 }

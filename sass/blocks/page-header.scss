@@ -1,3 +1,24 @@
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+  display: none;
+}
+.page-header__logo-mobile {
+  display: inline-block;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &--hvr-disabled {
+    &:hover {
+      opacity: 1;
+    }
+    &:active {
+      opacity: 1;
+    }
+  }
+}
 .page-header {
   position: relative;
 
@@ -9,7 +30,7 @@
     background-position: 50% 61px;
   }
   &--no-js {
-    background-position: 50% 397px;
+    background-position: 50% 390px;
   }
 }
 .page-header__logo {
@@ -23,16 +44,48 @@
   border-top: 1px solid #ececec;
   background-color: #fff;
 }
+@media (max-width: 767px) and (min-resolution: 144dpi),
+  (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .page-header {
+      &--background-image {
+        background-image: url(../img/hero-mobile@2x.jpg);
+        background-size: 575px auto;
+      }
+    }
+}
 
 //  Tablet
 
 @media #{$tablet-widths} {
+  .page-header__logo-mobile,
+  .page-header__logo-desktop {
+    display: none;
+  }
+  .page-header__logo-tablet {
+    display: block;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+    &--hvr-disabled {
+      &:hover {
+        opacity: 1;
+      }
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+
   .page-header {
     background-color: transparent;
 
     &--background-image {
+      background-image: url(../img/hero-desktop@1x.jpg);
       background-position: 50% 88px;
-      background-size: auto 745px;
+      //      background-size: auto 745px;
     }
     &--no-js {
       background-position: 50% 88px;
@@ -51,10 +104,40 @@
 
     border: none;
   }
+  @media (min-width: 768px) and (min-resolution: 144dpi),
+    (min-width: 768px) and (min-resolution: 1.5dppx) {
+      .page-header {
+        &--background-image {
+          background-image: url(../img/hero-desktop@2x.jpg);
+          background-size: 1150px auto;
+        }
+      }
+  }
 }
 // Desktop
 
 @media #{$desktop-widths} {
+  .page-header__logo-mobile,
+  .page-header__logo-tablet {
+    display: none;
+  }
+  .page-header__logo-desktop {
+    display: block;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+    &--hvr-disabled {
+      &:hover {
+        opacity: 1;
+      }
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
   .page-header__logo {
     order: 2;
     padding: 0;
