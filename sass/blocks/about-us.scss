@@ -1,11 +1,8 @@
 .about-us {
   padding-top: 32px;
-}
-.about-us__container {
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-
 }
 .about-us__title {
   @include font($fs-huge, $lh-large);
@@ -87,15 +84,10 @@
 
 @media #{$tablet-widths} {
   .about-us {
-    @include clearfix();
-
-    padding: 47px $tablet-indent 62px;
+    width: 768px;
+    padding: 42px $tablet-indent 23px;
 
     font-size: 0;
-  }
-  .about-us__container {
-    width: 768px;
-    padding: 0 $tablet-indent;
   }
   .about-us__title {
     @include font($tablet-h-font-size, $tablet-h-line-height);
@@ -168,11 +160,8 @@
 
 @media #{$desktop-widths} {
   .about-us {
-    padding: 0;
-  }
-  .about-us__container {
     width: 1150px;
-    padding: 59px $desktop-big-indent 69px;
+    padding: 49px $desktop-big-indent 69px;
   }
   .about-us__title {
     @include font($desktop-h-font-size, $desktop-h-line-height);

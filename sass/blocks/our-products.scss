@@ -108,6 +108,9 @@
 
     @include font(20px, $lh-large);
   }
+  .our-products__icon-toy {
+    right: 35px;
+  }
 }
 
 // Desktop
@@ -117,7 +120,7 @@
     @include font($desktop-h-font-size, $desktop-h-line-height);
 
     padding-bottom: 358px;
-    margin: 0 $desktop-small-indent;
+    margin: 0 auto;
   }
   .our-products__link {
     padding-right: 350px;

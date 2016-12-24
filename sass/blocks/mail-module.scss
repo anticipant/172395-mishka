@@ -1,7 +1,7 @@
 .mail-module {
   position: relative;
 
-//  width: 100%;
+  //  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 $mobile-indent 23px;
@@ -58,8 +58,8 @@
 
 .mail-module__icon-mail {
   position: absolute;
-  right: 8px;
-  top: 5px;
+  right: 4px;
+  top: 8px;
 
   fill: #000;
   opacity: 0.2;
@@ -100,6 +100,10 @@
     background-color: #f1f1f1;
     background-position: 95% 6px;
   }
+  .mail-module__icon-mail {
+    right: 23px;
+    top: 7px;
+  }
 }
 
 // Desktop
@@ -117,5 +121,9 @@
   }
   .mail-module__input {
     background-position: 99% 6px;
+  }
+  .mail-module__icon-mail {
+    right: 4px;
+    top: 7px;
   }
 }

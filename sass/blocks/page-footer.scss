@@ -18,7 +18,7 @@
 .page-footer__social {
   display: flex;
   justify-content: space-between;
-  padding: 0 53px 25px;
+  padding: 8px 53px 15px;
 
   font-size: 0;
 }
@@ -38,8 +38,8 @@
   align-items: center;
 
 
-  margin-left: 13px;
-  padding: 22px 0 5px;
+  margin-left: 0px;
+  padding: 20px 0 5px;
 
   color: #000;
   text-decoration: none;
@@ -50,7 +50,7 @@
   }
 }
 .page-footer__logo-htmlacademy {
-  margin-left: 10px;
+  margin-left: 24px;
   fill: $base-green;
   &:active {
     fill: $hover-green;
@@ -71,6 +71,9 @@
     padding: 0 $tablet-indent;
 
   }
+  .page-footer__copyright-link {
+    padding: 8px 0 5px;
+  }
   .page-footer__logo {
     display: block;
   }
@@ -84,11 +87,11 @@
     }
   }
   .page-footer__social {
-    margin-left: 30px;
+    margin-left: 76px;
     display: flex;
     justify-content: space-between;
     width: 160px;
-    padding: 55px 3px 54px 0px;
+    padding: 59px 3px 54px 0px;
     box-sizing: border-box;
 
     vertical-align: top;

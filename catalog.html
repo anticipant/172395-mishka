@@ -271,19 +271,21 @@
         </div>
       </footer>
       <div class="card-purchase card-purchase--hidden">
-        <h2 class="card-purchase__title">Добавить в корзину</h2>
-        <p class="card-purchase__description">Выберите размер:</p>
-        <form action="/" method="post" class="card-purchase__option">
-          <div class="card-purchase__wrapper">
-            <input type="radio" class="card-purchase__input" name="size" id="size-input-1" value="small" checked>
-            <label class="card-purchase__label" for="size-input-1">s</label>
-            <input type="radio" class="card-purchase__input" name="size" id="size-input-2" value="medium">
-            <label class="card-purchase__label" for="size-input-2">m</label>
-            <input type="radio" class="card-purchase__input" name="size" id="size-input-3" value="large">
-            <label class="card-purchase__label" for="size-input-3">l</label>
-            <input class="card-purchase__add" type="submit" value="Добавить">
-          </div>
-        </form>
+        <div class="card-purchase__container">
+          <h2 class="card-purchase__title">Добавить в корзину</h2>
+          <p class="card-purchase__description">Выберите размер:</p>
+          <form action="/" method="post" class="card-purchase__option">
+            <div class="card-purchase__wrapper">
+              <input type="radio" class="card-purchase__input" name="size" id="size-input-1" value="small" checked>
+              <label class="card-purchase__label" for="size-input-1">s</label>
+              <input type="radio" class="card-purchase__input" name="size" id="size-input-2" value="medium">
+              <label class="card-purchase__label" for="size-input-2">m</label>
+              <input type="radio" class="card-purchase__input" name="size" id="size-input-3" value="large">
+              <label class="card-purchase__label" for="size-input-3">l</label>
+              <input class="card-purchase__add" type="submit" value="Добавить">
+            </div>
+          </form>
+        </div>
       </div>
       </body>
     </html>

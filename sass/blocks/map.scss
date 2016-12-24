@@ -1,5 +1,5 @@
 .map {
-  //  width: 320px;
+  //    width: 320px;
   margin: 0 auto;
   padding: 34px 0 0;
 }
@@ -10,7 +10,7 @@
     url(../img/icon-map-pin.svg),
     url(../img/map-mobile@1x.jpg);
   background-repeat: no-repeat no-repeat;
-  background-position: 50% 50%, 50% 50%;
+  background-position: 49% 47%, 50% 50%;
 }
 @media (max-width: 767px) and (min-resolution: 144dpi),
   (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -32,6 +32,7 @@
     background-image:
       url(../img/icon-map-pin.svg),
       url(../img/map-tablet@1x.jpg);
+    background-position: 49.5% 47%, 50% 50%;
   }
   @media (min-width: 768px) and (min-resolution: 144dpi),
     (min-width: 768px) and (min-resolution: 1.5dppx) {
@@ -59,6 +60,7 @@
     background-image:
       url(../img/icon-map-pin.svg),
       url(../img/map-desktop@1x.jpg);
+    background-position: 51.5% 47%, 50% 50%;
   }
   @media (min-width: 1150px) and (min-resolution: 144dpi),
     (min-width: 1150px) and (min-resolution: 1.5dppx) {
