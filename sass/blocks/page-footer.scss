@@ -1,11 +1,16 @@
 .page-footer {
+  background-color: #f1f1f1;
+}
+.page-footer__container {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 23px $mobile-indent 19px;
 
   text-align: center;
 
-  background-color: #f1f1f1;
 }
 .page-footer__logo {
   display: none;
@@ -58,7 +63,8 @@
 //  Tablet
 
 @media #{$tablet-widths} {
-  .page-footer {
+  .page-footer__container {
+    width: 768px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -89,5 +95,12 @@
   }
   .page-footer__copyright {
     border: none;
+  }
+}
+//  Desktop
+
+@media #{$desktop-widths} {
+  .page-footer__container {
+    width: 1150px;
   }
 }

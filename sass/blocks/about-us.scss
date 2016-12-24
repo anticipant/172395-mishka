@@ -1,6 +1,12 @@
 .about-us {
   padding-top: 32px;
 }
+.about-us__container {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+}
 .about-us__title {
   @include font($fs-huge, $lh-large);
 
@@ -87,6 +93,10 @@
 
     font-size: 0;
   }
+  .about-us__container {
+    width: 768px;
+    padding: 0 $tablet-indent;
+  }
   .about-us__title {
     @include font($tablet-h-font-size, $tablet-h-line-height);
 
@@ -158,6 +168,10 @@
 
 @media #{$desktop-widths} {
   .about-us {
+    padding: 0;
+  }
+  .about-us__container {
+    width: 1150px;
     padding: 59px $desktop-big-indent 69px;
   }
   .about-us__title {

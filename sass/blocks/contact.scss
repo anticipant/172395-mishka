@@ -2,6 +2,10 @@
   padding: 39px 0 39px;
   border-top: 2px solid #000;
 }
+.contact__container {
+  width: 320px;
+  margin: 0 auto;
+}
 .contact__title {
   @include font ($fs-large, $lh-large);
 
@@ -76,10 +80,14 @@
   .contact {
     padding-top: 69px;
     padding-bottom: 57px;
-
-    background-image: url(../img/icon-flag.svg);
-    background-repeat: no-repeat;
-    background-position: 93% 53px;
+  }
+  .contact__container {
+    width: 768px;
+    &--image-flag {
+      background-image: url(../img/icon-flag.svg);
+      background-repeat: no-repeat;
+      background-position: 93% 0px;
+    }
   }
   .contact__title {
     @include font($tablet-h-font-size, $tablet-h-line-height);
@@ -134,9 +142,18 @@
 
     display: flex;
     flex-direction: column;
-    padding: 60px 50px 105px $desktop-big-indent;
+    padding: 60px 0 105px 0;
 
-    background-position: 113px 138px;
+
+  }
+  .contact__container {
+    width: 1150px;
+    padding: 0 50px 0 $desktop-big-indent;
+    
+
+    &--image-flag {
+      background-position: 113px 138px;
+    }
   }
   .contact__title {
     @include font($desktop-h-font-size, $desktop-h-line-height);

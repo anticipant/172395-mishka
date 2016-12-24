@@ -1,8 +1,15 @@
 .special-product-card {
-  padding: 27px $mobile-indent 35px;
+
+  padding: 27px 0 35px;
 
   background-color: #fff;
   border-bottom: 1px solid #000;
+}
+.special-product-card__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 $mobile-indent;
+  box-sizing: border-box;
 }
 .special-product-card__title {
   @include font($fs-huge, $lh-large);
@@ -72,6 +79,10 @@
 
 @media #{$tablet-widths} {
   .special-product-card {
+    padding: 0 0 60px;
+  }
+  .special-product-card__container {
+    width: 768px;
     position: relative;
     display: flex;
 
@@ -147,6 +158,10 @@
 
 @media #{$desktop-widths} {
   .special-product-card {
+    padding: 0;
+  }
+  .special-product-card__container {
+    width: 1150px;
     padding: 123px 50px 85px 50px;
   }
   .special-product-card__title {

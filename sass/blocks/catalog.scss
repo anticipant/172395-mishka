@@ -1,13 +1,17 @@
 .catalog {
+
+}
+.catalog__container {
   display: flex;
   flex-direction: column;
-
+  width: 320px;
+  margin: 0 auto;
   padding-bottom: 58px;
 }
 .catalog__title {
   @include font ($h1-font-size, $lh-large);
 
-  margin: 0;
+  margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 76px;
 
@@ -21,9 +25,9 @@
 //  Tablet
 
 @media #{$tablet-widths} {
-  .catalog {
+  .catalog__container {
+    width: 768px;
     padding-bottom: 63px;
-
   }
   .catalog__title {
     @include font ($tablet-h-font-size, $tablet-h-line-height);
@@ -37,10 +41,14 @@
 
 @media #{$desktop-widths} {
   .catalog {
+
+  }
+  .catalog__container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    width: 1150px;
     padding-bottom: 105px;
 
   }

@@ -1,5 +1,5 @@
 .main-nav {
-  background-color: transparent;
+  background-color: #fff;
 }
 .main-nav__items {
   padding-left: 0;
@@ -93,6 +93,8 @@
   .main-nav {
     display: flex;
     flex-wrap: wrap;
+    
+    background-color: transparent;
   }
   .main-nav__items {
     background-color: #fff;

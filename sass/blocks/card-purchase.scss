@@ -2,26 +2,26 @@
   outline: 1px dashed #000;
 }
 .card-purchase__title {
-  @include mobile-indent();
   @include font ($fs-huge, $lh-large);
 
   margin: 0;
+  padding: 0 $mobile-indent;
 
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
 .card-purchase__description {
-  @include mobile-indent();
   @include font ($fs-small, $lh-large);
 
+  padding: 0 $mobile-indent;
   margin: 0;
 
   color: $text-color;
   text-align: center;
 }
 .card-purchase__wrapper {
-  @include mobile-indent();
+  padding: 0 $mobile-indent;
 }
 .card-purchase__input {
   display: none;
@@ -40,7 +40,7 @@
   text-align: center;
 
   border: 2px solid #ececec;
-  
+
   &:hover {
     border-color: #c7c7c7;
   }

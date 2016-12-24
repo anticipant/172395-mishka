@@ -1,8 +1,9 @@
 .tel-module {
-  width: 100%;
+//  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 $mobile-indent 23px;
+  box-sizing: border-box;
 }
 .tel-module__title {
   @include font ($fs-medium, $lh-tiny);
