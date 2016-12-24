@@ -40,6 +40,16 @@
   text-align: center;
 
   border: 2px solid #ececec;
+  
+  &:hover {
+    border-color: #c7c7c7;
+  }
+  &:active {
+    border-color: $base-green;
+  }
+}
+.card-purchase__input:checked+.card-purchase__label {
+  border-color: $base-green;
 }
 .card-purchase__add {
   @include font($fs-medium, $lh-tiny);

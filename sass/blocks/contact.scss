@@ -45,9 +45,20 @@
   &--email {
     padding-right: 0;
     a {
+      padding-bottom: 5px;
+
       color: #000;
       text-decoration: none;
 
+      border-bottom: 1px solid #000;
+      &:hover {
+        color: $hover-green;
+
+        border-color: $hover-green;
+      }
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }

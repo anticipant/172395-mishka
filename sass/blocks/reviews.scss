@@ -30,7 +30,9 @@
 }
 .reviews__author-link {
   @include font ($fs-large, $lh-large);
+
   color: $reviews-text-color;
+  text-decoration: none;
 }
 .reviews__prev {
   height: 50px;
@@ -39,11 +41,20 @@
 
   font-size: 0;
 
-  background-image: url(../img/icon-left-arrow.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   background-color: #fff;
   border: 1px solid #ececec;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 .reviews__next {
   height: 50px;
@@ -52,11 +63,20 @@
 
   font-size: 0;
 
-  background-image: url(../img/icon-right-arrow.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   background-color: #fff;
   border: 1px solid #ececec;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 .reviews__write {
   display: block;

@@ -37,8 +37,21 @@
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   transform: translate(-50%, -50%);
+  transition: 0.1s;
+  
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 .video-blog__description {
   @include font ($fs-tiny, $lh-medium);
