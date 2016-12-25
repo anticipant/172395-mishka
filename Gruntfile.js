@@ -53,8 +53,8 @@ module.exports = function(grunt) {
     },
 
     svgstore: {
-      options: { 
-        svg: { 
+      options: {
+        svg: {
           style: "display: none"
         }
       },
