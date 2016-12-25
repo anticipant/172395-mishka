@@ -28,15 +28,15 @@ module.exports = function(grunt) {
     browserSync: {
       server: {
         bsFiles: {
-          src: ["build/*.html", "build/css /*.css"]
+          src: ["build/*.html", "build/css/*.css"]
         },
         options: {
           server: "build",
           watchTask: true,
-          //          notify: false,
-          //          open: true,
-          //          cors: true,
-          //          ui: false
+          notify: false,
+          open: true,
+          cors: true,
+          ui: false
         }
       }
     },
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
       symbols: {
         files: [{
           expand: true,
-          src: ["build/img/icons /*.svg"]
+          src: ["build/img/icons/*.svg"]
         }]
       }
     },
@@ -92,9 +92,9 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: [
-            "fonts /** /*.{woff,woff2}",
-            "img /**",
-            "js /**",
+            "fonts/**/*.{woff,woff2}",
+            "img/**",
+            "js/**",
             "*.html"
           ],
           dest: "build"
@@ -126,6 +126,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  //  grunt.registerTask("symbols", ["svgstore"]);
   grunt.registerTask("symbols", ["svgmin", "svgstore"]);
   grunt.registerTask("build", [
     "clean",

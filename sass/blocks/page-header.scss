@@ -129,8 +129,7 @@
       }
     }
   }
-  @media (min-width: 768px) and (min-resolution: 144dpi),
-    (min-width: 768px) and (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .page-header {
         &--background-index {
           background-image: url(../img/hero-desktop@2x.jpg);

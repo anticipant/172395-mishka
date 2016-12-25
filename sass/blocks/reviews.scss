@@ -177,10 +177,11 @@
     width: 175px;
     margin: 0;
   }
-  @media (min-width: 768px) and (min-resolution: 144dpi),
-    (min-width: 768px) and (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .map__container {
       background-image: url(../img/review@2x.jpg);
       background-size: 350px auto;
+    }
   }
 }
 
