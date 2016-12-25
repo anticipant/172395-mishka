@@ -1,8 +1,9 @@
 .textarea-module {
-  width: 100%;
+//  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 $mobile-indent 18px;
+  box-sizing: border-box;
 }
 .textarea-module__title {
   @include font ($fs-medium, $lh-tiny);
@@ -34,6 +35,15 @@
 
   color: $order-form-text-color-2;
   border: 2px solid #000;
+
+  &:hover {
+    border-color: $base-green;
+  }
+  &:focus {
+    border-color: $base-green;
+    color: $text-color;
+    outline: none;
+  }
 }
 
 //  Tablet

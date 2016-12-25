@@ -10,19 +10,3 @@
     display: table;
   }
 }
-@mixin mobile-indent() {
-  padding-left: $mobile-indent;
-  padding-right: $mobile-indent;
-}
-@mixin tablet-indent() {
-  padding-left: $tablet-indent;
-  padding-right: $tablet-indent;
-}
-@mixin desktop-big-indent() {
-  padding-left: $desktop-big-indent;
-  padding-right: $desktop-big-indent;
-}
-@mixin desktop-small-indent() {
-  padding-left: $desktop-small-indent;
-  padding-right: $desktop-small-indent;
-}

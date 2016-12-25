@@ -1,11 +1,10 @@
 $mobile-widths-only: "(max-width: 767px)";
 $tablet-widths: "(min-width: 768px)";
 $desktop-widths: "(min-width: 1150px)";
-
+$hover-green: #46c1ae;
 $base-green: #63d1bb;
 $base-black: #000000;
 $text-color: #444444;
-$transparent-text-color: rgba(68, 68, 68, 0.3);
 $border-color: #ececec;
 
 //Font-color
@@ -15,7 +14,7 @@ $contact-text-color: $text-color;
 $video-blog-text-color: $text-color;
 $order-form-legend-color: $base-green;
 $order-form-text-color-1: $base-black;
-$order-form-text-color-2: $transparent-text-color;
+$order-form-text-color-2: $text-color;
 $h1-color: $base-black;
 
 // Font Size

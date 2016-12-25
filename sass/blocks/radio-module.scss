@@ -1,8 +1,9 @@
 .radio-module {
-  width: 100%;
+//  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 $mobile-indent 20px;
+  box-sizing: border-box;
 }
 .radio-module__wrapper {
   position: relative;
@@ -56,8 +57,15 @@
     box-sizing: border-box;
 
     border-radius: 50%;
-    border: 2px solid #000;
+    border: 2px solid $text-color;
     background-color: transparent;
+  }
+  &:hover:before {
+    border-color: $base-green;
+  }
+  &:active:before {
+    border-color: $text-color;
+    opacity: 0.3;
   }
 }
 .radio-module__input:checked+.radio-module__label {

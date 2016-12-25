@@ -14,27 +14,79 @@
 .our-products__link {
   @include font(19px, $lh-medium);
 
+  position: relative;
+
   display: inline-block;
   padding: 26px 160px 29px $mobile-indent;
-
   font-weight: bold;
   color: #fff;
   text-decoration: none;
   vertical-align: top;
 
-  background-color: #63d1bb;
-  background-image: url(../img/icon-interior.svg);
-  background-repeat: no-repeat;
-  background-position: 87% 50%;
+  background-color: $base-green;
+
+  &:hover {
+    transform: translateY(-5px);
+    background-color: #59d5bc;
+    box-shadow: 0px 5px 0 0 #59d5bc;
+  }
+  &:active {
+    background-color: #59d5bc;
+  }
 
 }
+
 .our-products__link:nth-of-type(2) {
   background-color: #56c3b2;
-  background-image: url(../img/icon-toy.svg);
-  background-repeat: no-repeat;
-  background-position: 90% 50%;
-}
 
+  &:hover {
+    background-color: $hover-green;
+    box-shadow: 0px 5px 0 0 $hover-green;
+  }
+  &:active {
+    background-color: $hover-green;
+  }
+}
+.our-products__icon-interior {
+  position: absolute;
+  right: 35px;
+  top: 50%;
+
+  fill: #149080;
+  opacity: 0.5;
+
+  transform: translateY(-50%);
+
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.our-products__icon-toy {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+
+  fill: #149080;
+  opacity: 0.5;
+
+  transform: translateY(-50%);
+
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.our-products__link:hover svg {
+  opacity: 0.7;
+}
+.our-products__link:active svg {
+  opacity: 0.3;
+}
 //  Tablet
 
 @media #{$tablet-widths} {
@@ -56,6 +108,9 @@
 
     @include font(20px, $lh-large);
   }
+  .our-products__icon-toy {
+    right: 35px;
+  }
 }
 
 // Desktop
@@ -65,7 +120,7 @@
     @include font($desktop-h-font-size, $desktop-h-line-height);
 
     padding-bottom: 358px;
-    margin: 0 $desktop-small-indent;
+    margin: 0 auto;
   }
   .our-products__link {
     padding-right: 350px;

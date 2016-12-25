@@ -1,8 +1,9 @@
 .tel-module {
-  width: 100%;
+  //  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 $mobile-indent 23px;
+  box-sizing: border-box;
 }
 .tel-module__title {
   @include font ($fs-medium, $lh-tiny);
@@ -26,9 +27,15 @@
 
   }
 }
+.tel-module__form-inline {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
 .tel-module__input {
   @include font ($fs-medium, $lh-small);
 
+  flex-grow: 1;
   padding: 15px 0;
   margin-bottom: 10px;
 
@@ -36,11 +43,34 @@
 
   border: none;
   border-bottom: 2px solid #000;
-  background-image: url(../img/icon-phone.svg);
-  background-repeat: no-repeat;
-  background-position: 96% 8px;
+
+
+  &:hover {
+    border-color: $base-green;
+  }
+  &:focus {
+    border-color: $base-green;
+    color: $text-color;
+    outline: none;
+  }
 }
 
+.tel-module__icon-phone {
+  position: absolute;
+  right: 7px;
+  top: 8px;
+
+  fill: #000;
+  opacity: 0.2;
+}
+.tel-module__input:hover+.tel-module__icon-phone {
+  fill: #63d1bb;
+  opacity: 1;
+}
+.tel-module__input:focus+.tel-module__icon-phone {
+  fill: #63d1bb;
+  opacity: 1;
+}
 
 //  Tablet
 
@@ -70,6 +100,10 @@
     background-color: #f1f1f1;
     background-position: 95% 6px;
   }
+  .tel-module__icon-phone {
+    right: 27px;
+    top: 8px;
+  }
 }
 
 // Desktop
@@ -87,5 +121,9 @@
   }
   .tel-module__input {
     background-position: 99% 6px;
+  }
+  .tel-module__icon-phone {
+    right: 8px;
+    top: 8px;
   }
 }

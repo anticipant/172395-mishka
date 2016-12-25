@@ -1,13 +1,17 @@
 .catalog {
+
+}
+.catalog__container {
   display: flex;
   flex-direction: column;
-
+  width: 320px;
+  margin: 0 auto;
   padding-bottom: 58px;
 }
 .catalog__title {
   @include font ($h1-font-size, $lh-large);
 
-  margin: 0;
+  margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 76px;
 
@@ -21,15 +25,29 @@
 //  Tablet
 
 @media #{$tablet-widths} {
-  .catalog {
+  .catalog__container {
+    width: 768px;
     padding-bottom: 63px;
-
   }
   .catalog__title {
     @include font ($tablet-h-font-size, $tablet-h-line-height);
+
+    position: relative;
+
     margin-bottom: 83px;
     padding-top: 55px;
 
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background-image: url(../../img/bg-zigzag-fill.svg);
+      background-repeat: repeat-x;
+      background-size: auto 23px;
+    }
   }
 }
 
@@ -37,10 +55,14 @@
 
 @media #{$desktop-widths} {
   .catalog {
+
+  }
+  .catalog__container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    width: 1150px;
     padding-bottom: 105px;
 
   }
@@ -48,8 +70,8 @@
     @include font ($desktop-h-font-size, $desktop-h-line-height);
 
     width: 100%;
-    padding: 53px 0 90px;
-    margin-bottom: 141px;
+    padding: 53px 0 97px;
+    margin-bottom: 135px;
 
   }
 }

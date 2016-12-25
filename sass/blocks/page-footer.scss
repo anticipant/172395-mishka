@@ -1,11 +1,16 @@
 .page-footer {
+  background-color: #f1f1f1;
+}
+.page-footer__container {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 23px $mobile-indent 19px;
 
   text-align: center;
 
-  background-color: #f1f1f1;
 }
 .page-footer__logo {
   display: none;
@@ -13,61 +18,92 @@
 .page-footer__social {
   display: flex;
   justify-content: space-between;
-  padding: 0 53px 25px;
+  padding: 8px 53px 15px;
 
   font-size: 0;
 }
 .page-footer__copyright {
   @include font (19px, $lh-small);
 
+  display: flex;
+  justify-content: center;
   margin: 0;
-  padding-top: 25px;
 
   font-weight: bold;
 
-  border-top: 1px solid #000;
+  border-top: 1px solid #e5e5e5;
 }
 .page-footer__copyright-link {
-  display: inline-block;
-  width: 33px;
-  height: 38px;
-  margin-top: -5px;
-  margin-left: 13px;
+  display: flex;
+  align-items: center;
 
-  font-size: 0;
-  vertical-align: top;
 
-  background-image: url(../img/logo-htmlacademy.svg);
-  background-repeat: no-repeat;
-  background-position: 100% 0;
+  margin-left: 0px;
+  padding: 20px 0 5px;
+
+  color: #000;
+  text-decoration: none;
+
+  &:active {
+
+    opacity: 0.3;
+  }
 }
-
+.page-footer__logo-htmlacademy {
+  margin-left: 24px;
+  fill: $base-green;
+  &:active {
+    fill: $hover-green;
+  }
+}
+.page-footer__copyright-link:hover .page-footer__logo-htmlacademy {
+  fill: $hover-green;
+}
 
 //  Tablet
 
 @media #{$tablet-widths} {
-  .page-footer {
+  .page-footer__container {
+    width: 768px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 $tablet-indent;
 
   }
+  .page-footer__copyright-link {
+    padding: 8px 0 5px;
+  }
   .page-footer__logo {
     display: block;
   }
+  .page-footer__logo-svg {
+    &:hover {
+      fill: $hover-green;
+    }
+    &:active {
+      fill: $hover-green;
+      opacity: 0.3;
+    }
+  }
   .page-footer__social {
-    margin-left: 30px;
+    margin-left: 76px;
     display: flex;
     justify-content: space-between;
     width: 160px;
-    padding: 55px 3px 54px 0px;
+    padding: 59px 3px 54px 0px;
     box-sizing: border-box;
 
     vertical-align: top;
   }
   .page-footer__copyright {
-    padding: 17px 0 0 0;
     border: none;
+  }
+}
+//  Desktop
+
+@media #{$desktop-widths} {
+  .page-footer__container {
+    width: 1150px;
   }
 }

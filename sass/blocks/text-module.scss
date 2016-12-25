@@ -1,8 +1,9 @@
 .text-module {
-  width: 100%;
+  //  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 $mobile-indent 14px;
+  box-sizing: border-box;
 }
 .text-module__wrapper {
   display: flex;
@@ -55,6 +56,15 @@
 
   border: none;
   border-bottom: 2px solid #000;
+
+  &:hover {
+    border-color: $base-green;
+  }
+  &:focus {
+    border-color: $base-green;
+    color: $text-color;
+    outline: none;
+  }
 }
 
 //  Tablet

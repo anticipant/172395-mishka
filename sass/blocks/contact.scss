@@ -1,6 +1,12 @@
 .contact {
-  padding: 39px 0 39px;
-  border-top: 2px solid #000;
+  padding: 36px 0 39px;
+  margin: 0 auto;
+
+}
+.contact__container {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .contact__title {
   @include font ($fs-large, $lh-large);
@@ -45,9 +51,20 @@
   &--email {
     padding-right: 0;
     a {
+      padding-bottom: 2px;
+
       color: #000;
       text-decoration: none;
 
+      border-bottom: 1px solid #000;
+      &:hover {
+        color: $hover-green;
+
+        border-color: $hover-green;
+      }
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -63,17 +80,21 @@
 
 @media #{$tablet-widths} {
   .contact {
-    padding-top: 69px;
+    padding-top: 42px;
     padding-bottom: 57px;
-
-    background-image: url(../img/icon-flag.svg);
-    background-repeat: no-repeat;
-    background-position: 93% 53px;
+  }
+  .contact__container {
+    width: 768px;
+    &--image-flag {
+      background-image: url(../img/icon-flag.svg);
+      background-repeat: no-repeat;
+      background-position: 92% 4px;
+    }
   }
   .contact__title {
     @include font($tablet-h-font-size, $tablet-h-line-height);
 
-    padding: 0 $tablet-indent 48px;
+    padding: 20px $tablet-indent 48px;
   }
   .contact__info {
     display: block;
@@ -121,17 +142,27 @@
   .contact {
     position: relative;
 
+    width: 1150px;
     display: flex;
     flex-direction: column;
-    padding: 60px 50px 105px $desktop-big-indent;
+    padding: 60px 0 102px 0;
 
-    background-position: 113px 138px;
+
+  }
+  .contact__container {
+    width: 1150px;
+    padding: 0 50px 0 $desktop-big-indent;
+
+
+    &--image-flag {
+      background-position: 114px 72px;
+    }
   }
   .contact__title {
     @include font($desktop-h-font-size, $desktop-h-line-height);
 
     width: 300px;
-    padding: 86px 0 40px;
+    padding: 81px 0 40px;
 
   }
   .contact__info {
@@ -140,7 +171,7 @@
   }
   .contact__btn {
     display: block;
-    width: 226px;
+    width: 231px;
     margin: 0;
     padding-top: 16px;
     padding-bottom: 16px;

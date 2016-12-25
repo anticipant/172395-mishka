@@ -1,27 +1,54 @@
 .card-purchase {
-  outline: 1px dashed #000;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.9);
+
+  &--hidden {
+    display: none;
+  }
+}
+.card-purchase__container {
+  width: 320px;
+  padding-top: 30px;
+
+  background-color: #fff;
+  border: 1px solid #c6c6c6;
+
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+
+
 }
 .card-purchase__title {
-  @include mobile-indent();
   @include font ($fs-huge, $lh-large);
 
   margin: 0;
+  padding: 0 $mobile-indent;
 
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
 .card-purchase__description {
-  @include mobile-indent();
   @include font ($fs-small, $lh-large);
 
+  padding: 20px $mobile-indent;
   margin: 0;
 
   color: $text-color;
   text-align: center;
 }
 .card-purchase__wrapper {
-  @include mobile-indent();
+  padding: 0 $mobile-indent;
 }
 .card-purchase__input {
   display: none;
@@ -38,16 +65,36 @@
   color: $text-color;
   text-transform: uppercase;
   text-align: center;
+  font-weight: bold;
 
   border: 2px solid #ececec;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+  &:active {
+    border-color: $base-green;
+  }
+}
+.card-purchase__input:checked+.card-purchase__label {
+  border-color: $base-green;
 }
 .card-purchase__add {
+  @include font($fs-medium, $lh-tiny);
+
+  display: inline-block;
   width: 260px;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 30px;
   margin-bottom: 46px;
 
+  vertical-align: top;
+  font-weight: bold;
+
+
+  text-transform: uppercase;
+  text-align: center;
   color: #fff;
 
   background-color: $base-green;
@@ -57,7 +104,7 @@
 //  Tablet
 
 @media #{$tablet-widths} {
-  .card-purchase {
+  .card-purchase__container {
     width: 566px;
     margin: 0 auto;
     padding-top: $tablet-indent;

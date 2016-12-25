@@ -1,8 +1,30 @@
 .special-product-card {
-  padding: 27px $mobile-indent 35px;
+  position: relative;
+
+  padding: 27px 0 35px;
 
   background-color: #fff;
-  border-bottom: 1px solid #000;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    height: 7px;
+    width: 100%;
+    background-image: url(../../img/bg-zigzag-line.svg);
+    //    background-color: red;
+    background-size: contain;
+
+  }
+}
+.special-product-card__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 $mobile-indent;
+  box-sizing: border-box;
 }
 .special-product-card__title {
   @include font($fs-huge, $lh-large);
@@ -14,7 +36,7 @@
 .special-product-card__promo-title {
   @include font($fs-medium, $lh-tiny);
 
-  margin: 5px 0 0;
+  margin: 8px 0 0;
 
   font-weight: bold;
   color: $base-green;
@@ -23,7 +45,7 @@
 .special-product-card__description {
   @include font($fs-small, $lh-medium);
 
-  margin: 27px 0 0;
+  margin: 24px 0 0;
 
   color: $product-card-text-color;
 }
@@ -72,6 +94,14 @@
 
 @media #{$tablet-widths} {
   .special-product-card {
+    padding: 0 0 6px;
+
+    &:after {
+      height: 15px;
+    }
+  }
+  .special-product-card__container {
+    width: 768px;
     position: relative;
     display: flex;
 
@@ -147,7 +177,15 @@
 
 @media #{$desktop-widths} {
   .special-product-card {
-    padding: 123px 50px 85px 50px;
+    padding: 0;
+
+    &:after {
+      height: 23px;
+    }
+  }
+  .special-product-card__container {
+    width: 1150px;
+    padding: 123px 50px 96px 50px;
   }
   .special-product-card__title {
     @include font($desktop-h-font-size, $desktop-h-line-height);
@@ -179,7 +217,7 @@
     margin: 49px 50px 0 175px;
   }
   .special-product-card__image {
-    bottom: 85px;
+    bottom: 96px;
 
     width: 525px;
 
