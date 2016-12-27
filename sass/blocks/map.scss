@@ -1,5 +1,5 @@
 .map {
-  //    width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding: 34px 0 0;
 }
@@ -28,6 +28,7 @@
 @media #{$tablet-widths} {
   .map {
     padding-top: 56px;
+    width: 768px;
   }
   .map__container {
     background-image:
