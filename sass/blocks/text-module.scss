@@ -47,6 +47,7 @@
 .text-module__input {
   @include font ($fs-medium, $lh-small);
 
+  height: 18px;
   padding: 15px 0 16px 0;
   margin-bottom: 18px;
 
@@ -94,6 +95,7 @@
   .text-module__input {
     flex-grow: 1;
     width: 350px;
+    height: 47px;
     margin: 0 0 29px 5px;
     padding: 6px 10px 13px 15px;
     box-sizing: border-box;

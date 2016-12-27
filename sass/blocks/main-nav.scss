@@ -1,10 +1,12 @@
 .main-nav {
   background-color: #fff;
   &--open {
-    //    position: absolute;
-    //    top: 0;
-    //    z-index: 1;
-    //    width: 320px;
+    @media (max-width: 767px) {
+      //      position: absolute;
+      //      top: 0;
+      //      z-index: 1;
+      //      width: 320px;
+    }
   }
 }
 .main-nav__items {
@@ -18,7 +20,7 @@
     display: block;
   }
   &--open {
-    //        display: block;
+    //    display: block;
   }
 }
 .main-nav__items-news {
@@ -103,11 +105,11 @@
 
   &--no-js {
 
-    //    background-image: url(../img/icon-menu-close.svg);
+    background-image: url(../img/icon-menu-close.svg);
   }
   &--open {
 
-    background-image: url(../img/icon-menu-close.svg);
+    //    background-image: url(../img/icon-menu-close.svg);
   }
 }
 .main-nav__description {
