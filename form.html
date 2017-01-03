@@ -200,5 +200,40 @@
         </p>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector(".main-nav");
+      var navItems = document.querySelectorAll(".main-nav__items");
+      var navToggle = document.querySelector(".main-nav__toggle");
+      var headerContainer = document.querySelector(".page-header__container");
+
+      for (var i = 0; i<navItems.length; ++i) {
+        navItems[i].classList.remove("main-nav__items--no-js");
+        navItems[i].classList.remove("main-nav__items--open");
+      }
+      navToggle.classList.remove("main-nav__toggle--no-js");
+      headerContainer.classList.remove("page-header__container--no-js");
+
+      navMain.classList.remove("main-nav--open");
+      navToggle.classList.remove("main-nav__toggle--open");
+      headerContainer.classList.remove("page-header__container--open");
+
+      navToggle.addEventListener("click", function() {
+        if (navMain.classList.contains("main-nav--open")) {
+          for (var i = 0; i<navItems.length; ++i) {
+            navItems[i].classList.remove("main-nav__items--open");
+          }
+          navMain.classList.remove("main-nav--open");
+          navToggle.classList.remove("main-nav__toggle--open");
+          headerContainer.classList.remove("page-header__container--open");
+        } else {
+          for (var i = 0; i<navItems.length; ++i) {
+            navItems[i].classList.add("main-nav__items--open");
+          }
+          navMain.classList.add("main-nav--open");
+          navToggle.classList.add("main-nav__toggle--open");
+          headerContainer.classList.add("page-header__container--open");
+        }
+      });
+    </script>
   </body>
 </html>
